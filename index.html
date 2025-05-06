@@ -10,120 +10,79 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #1e3a8a, #1e40af, #1e3a8a);
+            color: white;
+        }
+        #navbar {
+            background-color: transparent;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        #navbar.scrolled {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #navbar a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+        #navbar.scrolled a {
+            color: #1e3a8a;
+        }
+    </style>
 </head>
 <body class="font-sans">
     <!-- Menú de navegación -->
-    <nav id="navbar" class="fixed top-0 w-full p-4 z-50 transition-all bg-transparent">
-        <ul class="flex justify-center gap-4 list-none">
-            <li><a href="#hero" class="text-blue-500 font-bold hover:underline">Inicio</a></li>
-            <li><a href="#beneficios" class="text-blue-500 font-bold hover:underline">Beneficios</a></li>
-            <li><a href="#testimonios" class="text-blue-500 font-bold hover:underline">Testimonios</a></li>
-            <li><a href="#como-funciona" class="text-blue-500 font-bold hover:underline">Cómo funciona</a></li>
-            <li><a href="#garantia" class="text-blue-500 font-bold hover:underline">Garantía</a></li>
-            <li><a href="#cta-final" class="text-blue-500 font-bold hover:underline">Contacto</a></li>
+    <nav id="navbar" class="fixed top-0 w-full p-4 z-50 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="h-10">
+        </div>
+        <!-- Enlaces -->
+        <ul class="flex gap-6 list-none">
+            <li><a href="#hero" class="font-bold hover:underline">Inicio</a></li>
+            <li><a href="#beneficios" class="font-bold hover:underline">Beneficios</a></li>
+            <li><a href="#testimonios" class="font-bold hover:underline">Testimonios</a></li>
+            <li><a href="#como-funciona" class="font-bold hover:underline">Cómo funciona</a></li>
+            <li><a href="#garantia" class="font-bold hover:underline">Garantía</a></li>
+            <li><a href="#cta-final" class="font-bold hover:underline">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- Contenido principal -->
     <main>
         <!-- Sección 1: Hero -->
-        <header id="hero" class="flex flex-col justify-center items-center h-screen bg-cover bg-center text-white text-center px-4" style="background-image: url('hero-background.jpg');" data-aos="fade-up">
-            <h1 class="text-4xl md:text-6xl font-bold uppercase">
-                Llenamos tu agenda con pacientes calificados en menos de 30 días… o trabajamos GRATIS hasta lograrlo.
+        <header id="hero" class="flex flex-col justify-center items-center h-screen text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">
+                LLenamos tu agenda con pacientes calificados en menos de 30 días 
             </h1>
-        </header>
-
-        <!-- Nueva sección -->
-        <section id="descripcion" class="py-8 px-4 max-w-5xl mx-auto text-center" data-aos="fade-up">
-            <p class="text-lg md:text-xl">
-                Especialistas en marketing digital para profesionales de la salud: odontología, estética, fisioterapia y más.
-            </p>
             <p class="text-lg md:text-xl mt-4">
-                Agenda hoy una llamada gratuita y descubre cómo lo vamos a aplicar en tu negocio.
+                o trabajamos GRATIS hasta lograrlo.
             </p>
-            <a href="#cta-final" class="mt-6 bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition inline-block">Quiero llenar mi agenda</a>
-        </section>
-
-        <!-- Sección 2: Beneficios del Sistema -->
-        <section id="beneficios" class="py-8 px-4 max-w-5xl mx-auto" data-aos="fade-right">
-            <h2 class="text-2xl font-bold text-center mb-4">¿Qué conseguimos para ti?</h2>
-            <ul class="list-disc pl-6 space-y-2">
-                <li>Citas con pacientes reales y listos para agendar</li>
-                <li>Automatización del seguimiento (WhatsApp + Email)</li>
-                <li>Anuncios estratégicos en Meta y Google</li>
-                <li>Posicionamiento SEO local para aparecer en Google</li>
-                <li>Sin riesgo: garantizamos resultados o trabajamos gratis</li>
-            </ul>
-            <div class="text-center mt-6">
-                <a href="#cta-final" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition">👉 Solicitar auditoría gratuita</a>
+            <div class="mt-6 flex gap-4">
+                <a href="#cta" class="bg-green-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-green-700 transition">Try GitHub Copilot</a>
+                <a href="#releases" class="border border-white text-white py-3 px-6 rounded-lg text-lg hover:bg-white hover:text-black transition">Explore upcoming releases</a>
             </div>
-        </section>
-
-        <!-- Sección 3: Prueba Social (Testimonios) -->
-        <section id="testimonios" class="py-8 px-4 max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-4">Resultados reales</h2>
-            <div class="space-y-6">
-                <article class="bg-gray-100 p-4 rounded-lg shadow">
-                    <blockquote class="italic">“Pasamos de tener 3 pacientes al día a tener la agenda llena en menos de un mes.”</blockquote>
-                    <p class="mt-2 font-bold">— Dra. Lucía Méndez (Odontóloga)</p>
-                </article>
-                <article class="bg-gray-100 p-4 rounded-lg shadow">
-                    <blockquote class="italic">“No tenía tiempo de responder mensajes, y ahora el sistema automatiza todo. Estoy cerrando más citas sin esfuerzo.”</blockquote>
-                    <p class="mt-2 font-bold">— Clínica Revital</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Sección 4: Cómo funciona -->
-        <section id="como-funciona" class="py-8 px-4 max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-4">¿Cómo funciona?</h2>
-            <ol class="list-decimal pl-6 space-y-2">
-                <li>Paso 1: Agendamos una llamada para conocer tu clínica</li>
-                <li>Paso 2: En 72 horas implementamos tu sistema completo</li>
-                <li>Paso 3: Empiezas a recibir pacientes y llenar tu agenda</li>
-            </ol>
-            <div class="text-center mt-6">
-                <a href="#cta-final" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition">Agendar llamada</a>
-            </div>
-        </section>
-
-        <!-- Sección 5: Garantía -->
-        <section id="garantia" class="py-8 px-4 max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-center mb-4">Garantía de resultados</h2>
-            <p class="text-center">Si no generamos al menos 20 citas calificadas en 30 días, seguimos trabajando sin cobrarte hasta lograrlo.</p>
-        </section>
-
-        <!-- Sección 6: CTA Final -->
-        <section id="cta-final" class="py-8 px-4 max-w-5xl mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4">¿Listo para dejar de depender del boca a boca y redes sociales sin resultados?</h2>
-            <p class="mb-6">Te mostramos cómo hacerlo, sin compromiso.</p>
-            <a href="https://tu-enlace.com" class="bg-blue-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition">👉 Agendar mi auditoría gratuita</a>
-        </section>
+        </header>
     </main>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-gray-800 text-white text-center">
-        <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
 
     <script>
         // Cambiar el color del menú al hacer scroll
         window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
+            const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                nav.classList.remove('bg-transparent');
-                nav.classList.add('bg-white', 'shadow');
+                navbar.classList.add('scrolled');
             } else {
-                nav.classList.add('bg-transparent');
-                nav.classList.remove('bg-white', 'shadow');
+                navbar.classList.remove('scrolled');
             }
         });
 
         // Inicializar AOS (Animate On Scroll)
         AOS.init({
-            duration: 1000, // Duración de la animación en milisegundos
-            easing: 'ease-in-out', // Tipo de easing para la animación
-            once: true, // Si la animación debe ocurrir solo una vez al hacer scroll
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
         });
     </script>
 </body>
