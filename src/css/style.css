@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(180deg, #ffffff, #e0f7fa);
+    /* Fondo blanco a azul claro */
+}
+
+#navbar {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar a {
+    transition: color 0.3s ease;
+}
+
+#hero {
+    background: linear-gradient(180deg, #e0f7fa, #ffffff);
+    /* Fondo azul claro a blanco */
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -245,6 +245,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-40 {
+    z-index: 40;
+  }
   .z-50 {
     z-index: 50;
   }
@@ -575,6 +578,15 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-\[60px\] {
+    padding-top: 60px;
+  }
+  .pt-\[80px\] {
+    padding-top: 80px;
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -943,6 +955,11 @@
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pt-0 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 0);
     }
   }
   .md\:text-3xl {

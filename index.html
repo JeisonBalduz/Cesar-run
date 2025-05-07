@@ -10,63 +10,37 @@
         content="marketing digital, odontología, estética, fisioterapia, pacientes calificados, SEO local">
     <meta name="author" content="Tu Empresa">
     <title>Marketing Digital para Profesionales de la Salud</title>
+    <link rel="stylesheet" href="src/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <style>
-        body {
-            background: linear-gradient(180deg, #ffffff, #e0f7fa);
-            /* Fondo blanco a azul claro */
-        }
-
-        #navbar {
-            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        #navbar a {
-            transition: color 0.3s ease;
-        }
-
-        #hero {
-            background: linear-gradient(180deg, #e0f7fa, #ffffff);
-            /* Fondo azul claro a blanco */
-        }
-
-        .bg-transparent {
-            background-color: transparent !important;
-        }
-
-        .bg-white {
-            background-color: white;
-        }
-
-        .shadow {
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 
 <body class="font-sans">
     <!-- Menú de navegación -->
-    <header id="navbar" class="bg-transparent">
-        <nav class="flex justify-between items-center w-[92%] mx-auto h-[60%]">
-            <div>
-                <img class="w-12 md:w-16 cursor-pointer" src="src/svg/logotipo2.svg" alt="...">
-            </div>
+    <header id="navbar" class="absolute top-0 left-0 w-full z-50">
+        <nav class=" w-[100%] mx-auto h-[60%]">
+
             <div
-                class="nav-links duration-1000 md:static absolute bg-white md:min-h-fit left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row items-center px-5">
+                class="flex justify-between items-center nav-links duration-1000 md:static absolute bg-white md:min-h-fit left-0 top-[-100%] md:w-auto w-full flex flex-col md:flex-row items-center px-5">
+                <div>
+                    <img class="w-12 md:w-16 cursor-pointer" src="src/svg/logotipo2.svg" alt="...">
+                </div>
                 <ul class="flex flex-col md:flex-row md:items-center md:gap-[4vw] gap-4 py-3">
                     <li>
-                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base" href="#">Products</a>
+                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                            href="#">Products</a>
                     </li>
                     <li>
-                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base" href="#">Solution</a>
+                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                            href="#">Solution</a>
                     </li>
                     <li>
-                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base" href="#">Resource</a>
+                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                            href="#">Resource</a>
                     </li>
                     <li>
-                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base" href="#">Developers</a>
+                        <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                            href="#">Developers</a>
                     </li>
                     <li>
                         <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base" href="#">Pricing</a>
@@ -74,16 +48,17 @@
                 </ul>
             </div>
             <div class="flex items-center gap-4 md:gap-6 py-3">
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl md:text-3xl cursor-pointer md:hidden"></ion-icon>
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-2xl md:text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
         </nav>
     </header>
 
     <!-- Contenido principal -->
-    <main>
+    <main class="">
         <!-- Sección 1: Hero -->
         <!-- Hero Section -->
-        <header id="hero" class="flex flex-col justify-center items-center h-screen text-center px-4">
+        <header id="hero" class="flex flex-col justify-center items-center h-screen text-center px-4 pt-10 md:pt-0">
             <h1 class="text-3xl md:text-6xl font-bold text-blue-700">
                 Llenamos tu agenda con pacientes <br>
                 <span id="typewriter" class="text-blue-900"></span>
@@ -131,11 +106,11 @@
                 <h2 class="text-3xl font-bold mb-6 text-teal-700">Testimonios</h2>
                 <div class="space-y-6">
                     <blockquote class="italic bg-white p-6 rounded-lg shadow text-teal-600">
-                        “Pasamos de tener 3 pacientes al día a tener la agenda llena en menos de un mes.”
+                        "Pasamos de tener 3 pacientes al día a tener la agenda llena en menos de un mes."
                         <p class="mt-2 font-bold text-teal-700">— Dra. Lucía Méndez (Odontóloga)</p>
                     </blockquote>
                     <blockquote class="italic bg-white p-6 rounded-lg shadow text-teal-600">
-                        “No tenía tiempo de responder mensajes, y ahora el sistema automatiza todo. Estoy cerrando más citas sin esfuerzo.”
+                        "No tenía tiempo de responder mensajes, y ahora el sistema automatiza todo. Estoy cerrando más citas sin esfuerzo."
                         <p class="mt-2 font-bold text-teal-700">— Clínica Revital</p>
                     </blockquote>
                 </div>
