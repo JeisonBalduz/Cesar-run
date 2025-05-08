@@ -12,12 +12,19 @@
 .subtitulo {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+
+.subtitulo__1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
     font-style: normal;
 }
 
 main {
-    background: linear-gradient(180deg, #ffffff, #e0f7fa);
+    background: linear-gradient(180deg, #ffffff, #eef7ff);
     /* Fondo blanco a azul claro */
 }
 
