@@ -31,7 +31,7 @@
 
 <body class="font-sans">
     <!-- Menú de navegación -->
-    <header id="navbar" class="absolute top-0 left-0 w-full z-50">
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50">
         <nav class="w-[100%] mx-auto navegacion ">
             <div class="contenedor__menu flex  justify-between items-center h-15 bg-white">
                 <div class="flex items-center h-full px-4">
@@ -70,7 +70,7 @@
     <main class="">
         <!-- Sección 1: Hero -->
         <!-- Hero Section -->
-        <header id="hero" class="flex flex-col justify-center  items-center h-screen text-center sm:px-0 md:px-4 pt-10 ">
+        <header id="hero" class="flex flex-col justify-center  items-center h-screen text-center sm:px-0 md:px-4 pt-10 max-sm:h-100">
             <h1 class="titulo flex flex-col sm:gap-2 md:gap-3">
                 <span class="text-[30px] sm:text-[50px] md:text-[70px] lg:text-[80px] font-bold text-lightblue leading-none">LLENAMOS TU AGENDA</span>
                 <span class="text-[20px] sm:text-[30px] md:text-[50px]  lg:text-[60px] font-semibold text-darkblue leading-none ">
@@ -104,6 +104,8 @@
                 </a>
             </div>
         </header>
+        
+
 
         <!-- Sección 2: Beneficios -->
         <!-- <section id="beneficios" class="py-16 px-4 bg-white">
@@ -142,88 +144,268 @@
             <p class="mb-6">Agenda hoy una llamada gratuita y descubre cómo lo vamos a aplicar en tu negocio.</p>
             <a href="#cta" class="bg-white text-teal-500 py-3 px-6 rounded-lg text-lg hover:bg-teal-700 hover:text-white transition">Agendar mi auditoría gratuita</a>
         </section> -->
-    </main>
 
-    <script>
-        // Selecciona el elemento del navbar
-        const navbar = document.getElementById('navbar');
-        const navLinks = document.querySelector('.nav-links')
+        <!-- Carrusel Section -->
+        <div id="default-carousel" class="relative w-full mt-20" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-[200px] sm:h-[300px] md:h-[400px] overflow-hidden">
+                <!-- Item 1 -->
+                <div class="absolute w-full h-full transition-transform duration-700 ease-in-out transform translate-x-0" data-carousel-item>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lightblue/30 to-transparent z-10"></div>
+                    <img src="src/svg/logo__1.svg" class="absolute block w-full h-full object-contain" alt="...">
+                    <div class="absolute inset-0 flex items-center justify-center z-20">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-2xl md:text-4xl font-bold mb-2">Profesionales de la Salud</h2>
+                            <p class="text-sm md:text-lg">Transformamos tu práctica médica con estrategias digitales efectivas</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="absolute w-full h-full transition-transform duration-700 ease-in-out transform translate-x-full" data-carousel-item>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lightblue/30 to-transparent z-10"></div>
+                    <img src="src/svg/logo__2.svg" class="absolute block w-full h-full object-contain" alt="...">
+                    <div class="absolute inset-0 flex items-center justify-center z-20">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-2xl md:text-4xl font-bold mb-2">Resultados Garantizados</h2>
+                            <p class="text-sm md:text-lg">Aumenta tus pacientes o no pagas nada</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="absolute w-full h-full transition-transform duration-700 ease-in-out transform translate-x-full" data-carousel-item>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lightblue/30 to-transparent z-10"></div>
+                    <img src="src/svg/logo__3.svg" class="absolute block w-full h-full object-contain" alt="...">
+                    <div class="absolute inset-0 flex items-center justify-center z-20">
+                        <div class="text-center text-white px-4">
+                            <h2 class="text-2xl md:text-4xl font-bold mb-2">Marketing Especializado</h2>
+                            <p class="text-sm md:text-lg">Estrategias diseñadas específicamente para el sector salud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+                    <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+                    <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
 
-        // Escucha el evento de scroll
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('bg-white', 'shadow');
-                navbar.classList.remove('bg-transparent');
-            } else {
-                navbar.classList.add('bg-transparent');
-                navbar.classList.remove('bg-white', 'shadow');
-            }
-        });
+        <script>
+            // Selecciona el elemento del navbar
+            const navbar = document.getElementById('navbar');
+            const navLinks = document.querySelector('.nav-links')
 
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            if (e.name === 'close') {
-                navLinks.classList.remove('-top-[100vh]')
-                navLinks.classList.add('top-0')
-            } else {
-                navLinks.classList.add('-top-[100vh]')
-                navLinks.classList.remove('top-0')
-            }
-        }
-
-        const text = "30 días";
-        const typewriterElement = document.getElementById("typewriter");
-        let index = 0;
-
-        function typeEffect() {
-            if (index < text.length) {
-                typewriterElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 300); // Velocidad del efecto
-            }
-        }
-
-        // Inicia el efecto cuando se carga la página
-        window.onload = typeEffect;
-
-        function selectMenuItem(selectedId) {
-            const menuItems = document.querySelectorAll('li[id^="li"]');
-            const slider = document.getElementById('menu-slider');
-            const selectedItem = document.getElementById(selectedId);
-            const menuList = document.querySelector('.subtitulo__1');
-            
-            // Obtener el índice del elemento seleccionado
-            const index = Array.from(menuItems).indexOf(selectedItem);
-            
-            if (window.innerWidth < 768) {
-                // En móvil, calculamos la posición basada en el índice y altura del elemento
-                const itemHeight = 40; // altura de cada elemento en píxeles
-                slider.style.transform = `translateY(${index * itemHeight}px)`;
-            } else {
-                // En desktop, movemos en X como antes
-                const selectedRect = selectedItem.getBoundingClientRect();
-                const menuRect = menuList.getBoundingClientRect();
-                const newLeft = selectedRect.left - menuRect.left;
-                slider.style.transform = `translateX(${newLeft}px)`;
-                slider.style.width = `${selectedRect.width}px`;
-            }
-            
-            menuItems.forEach(item => {
-                const link = item.querySelector('a');
-                if (item.id === selectedId) {
-                    link.classList.remove('text-blue-700', 'hover:text-darkblue');
-                    link.classList.add('text-white');
+            // Escucha el evento de scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-white', 'shadow');
+                    navbar.classList.remove('bg-transparent');
                 } else {
-                    link.classList.remove('text-white');
-                    link.classList.add('text-blue-700', 'hover:text-darkblue');
+                    navbar.classList.add('bg-transparent');
+                    navbar.classList.remove('bg-white', 'shadow');
                 }
             });
-        }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            selectMenuItem('li1');
-        });
-    </script>
+            function onToggleMenu(e) {
+                e.name = e.name === 'menu' ? 'close' : 'menu'
+                if (e.name === 'close') {
+                    navLinks.classList.remove('-top-[100vh]')
+                    navLinks.classList.add('top-0')
+                } else {
+                    navLinks.classList.add('-top-[100vh]')
+                    navLinks.classList.remove('top-0')
+                }
+            }
+
+            const text = "30 días";
+            const typewriterElement = document.getElementById("typewriter");
+            let index = 0;
+
+            function typeEffect() {
+                if (index < text.length) {
+                    typewriterElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeEffect, 300); // Velocidad del efecto
+                }
+            }
+
+            // Inicia el efecto cuando se carga la página
+            window.onload = typeEffect;
+
+            function selectMenuItem(selectedId) {
+                const menuItems = document.querySelectorAll('li[id^="li"]');
+                const slider = document.getElementById('menu-slider');
+                const selectedItem = document.getElementById(selectedId);
+                const menuList = document.querySelector('.subtitulo__1');
+                
+                // Obtener el índice del elemento seleccionado
+                const index = Array.from(menuItems).indexOf(selectedItem);
+                
+                if (window.innerWidth < 768) {
+                    // En móvil, calculamos la posición basada en el índice y altura del elemento
+                    const itemHeight = 40; // altura de cada elemento en píxeles
+                    slider.style.transform = `translateY(${index * itemHeight}px)`;
+                } else {
+                    // En desktop, movemos en X como antes
+                    const selectedRect = selectedItem.getBoundingClientRect();
+                    const menuRect = menuList.getBoundingClientRect();
+                    const newLeft = selectedRect.left - menuRect.left;
+                    slider.style.transform = `translateX(${newLeft}px)`;
+                    slider.style.width = `${selectedRect.width}px`;
+                }
+                
+                menuItems.forEach(item => {
+                    const link = item.querySelector('a');
+                    if (item.id === selectedId) {
+                        link.classList.remove('text-blue-700', 'hover:text-darkblue');
+                        link.classList.add('text-white');
+                    } else {
+                        link.classList.remove('text-white');
+                        link.classList.add('text-blue-700', 'hover:text-darkblue');
+                    }
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                selectMenuItem('li1');
+            });
+
+            // Inicialización del carrusel
+            const carousel = document.getElementById('default-carousel');
+            const items = carousel.querySelectorAll('[data-carousel-item]');
+            const prevButton = carousel.querySelector('[data-carousel-prev]');
+            const nextButton = carousel.querySelector('[data-carousel-next]');
+            const indicators = carousel.querySelectorAll('[data-carousel-slide-to]');
+            let currentIndex = 0;
+            let autoPlayInterval;
+            let isMouseOver = false;
+            let isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            function showSlide(index) {
+                items.forEach((item, i) => {
+                    if (i === index) {
+                        item.style.transform = 'translateX(0)';
+                    } else if (i < index) {
+                        item.style.transform = 'translateX(-100%)';
+                    } else {
+                        item.style.transform = 'translateX(100%)';
+                    }
+                });
+                
+                indicators.forEach(indicator => indicator.setAttribute('aria-current', 'false'));
+                indicators[index].setAttribute('aria-current', 'true');
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                const next = (currentIndex + 1) % items.length;
+                showSlide(next);
+            }
+
+            function prevSlide() {
+                const prev = (currentIndex - 1 + items.length) % items.length;
+                showSlide(prev);
+            }
+
+            function startAutoPlay() {
+                if (!isMouseOver && !isTouchDevice) {
+                    autoPlayInterval = setInterval(nextSlide, 5000);
+                }
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            // Event listeners para los botones
+            prevButton.addEventListener('click', () => {
+                prevSlide();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            nextButton.addEventListener('click', () => {
+                nextSlide();
+                stopAutoPlay();
+                startAutoPlay();
+            });
+
+            // Event listeners para los indicadores
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    showSlide(index);
+                    stopAutoPlay();
+                    startAutoPlay();
+                });
+            });
+
+            // Event listeners para el mouse (solo en dispositivos no táctiles)
+            if (!isTouchDevice) {
+                carousel.addEventListener('mouseenter', () => {
+                    isMouseOver = true;
+                    stopAutoPlay();
+                });
+
+                carousel.addEventListener('mouseleave', () => {
+                    isMouseOver = false;
+                    startAutoPlay();
+                });
+            }
+
+            // Event listeners para dispositivos táctiles
+            if (isTouchDevice) {
+                carousel.addEventListener('touchstart', (e) => {
+                    touchStartX = e.touches[0].clientX;
+                    stopAutoPlay();
+                }, { passive: true });
+
+                carousel.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].clientX;
+                    handleSwipe();
+                }, { passive: true });
+
+                function handleSwipe() {
+                    const swipeThreshold = 50; // mínimo de píxeles para considerar un swipe
+                    const diff = touchStartX - touchEndX;
+
+                    if (Math.abs(diff) > swipeThreshold) {
+                        if (diff > 0) {
+                            // Swipe izquierda - siguiente
+                            nextSlide();
+                        } else {
+                            // Swipe derecha - anterior
+                            prevSlide();
+                        }
+                    }
+                    startAutoPlay();
+                }
+            }
+
+            // Iniciar autoplay
+            startAutoPlay();
+
+            // Mostrar primer slide
+            showSlide(0);
+        </script>
+    </main>
 </body>
 
 </html>
