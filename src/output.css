@@ -240,6 +240,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -700,6 +703,11 @@
   .sm\:mt-20 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:items-center {
+    @media (width >= 40rem) {
+      align-items: center;
     }
   }
   .sm\:gap-0 {
