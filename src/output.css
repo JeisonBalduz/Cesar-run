@@ -311,6 +311,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -478,6 +481,28 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[5rem\] {
+    font-size: 5rem;
+  }
+  .text-\[6rem\] {
+    font-size: 6rem;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
+  .text-\[60rem\] {
+    font-size: 60rem;
+  }
+  .text-\[80px\] {
+    font-size: 80px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -494,6 +519,12 @@
   }
   .text-\[\#121063\] {
     color: #121063;
+  }
+  .text-\[6\] {
+    color: 6;
+  }
+  .text-\[\<value\>\] {
+    color: <value>;
   }
   .text-amber-50 {
     color: var(--color-amber-50);
@@ -607,6 +638,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-500);
+      }
+    }
+  }
+  .hover\:text-darkblue {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-darkblue);
       }
     }
   }
@@ -779,6 +817,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -886,6 +928,7 @@
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
