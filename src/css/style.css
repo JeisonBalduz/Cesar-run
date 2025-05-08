@@ -60,5 +60,7 @@ main {
 /* Para móviles estándar (de 321px a 480px) */
 @media (min-width: 340px) {
     /* Aquí puedes ajustar fuentes, márgenes, paddings, diseño general para móviles más comunes */
-    
+    .logo{
+        width: 100px;
+    }
 }
