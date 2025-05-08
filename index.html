@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Especialistas en marketing digital para profesionales de la salud. Llenamos tu agenda con pacientes calificados en menos de 30 días o trabajamos gratis.">
     <meta name="keywords" content="marketing digital, odontología, estética, fisioterapia, pacientes calificados, SEO local">
@@ -17,37 +18,42 @@
     <meta name="twitter:description" content="Llenamos tu agenda con pacientes calificados en menos de 30 días">
 
     <title>Marketing Digital para Profesionales de la Salud | Llena tu agenda en 30 días</title>
-
+    <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/background_gradient-fill.css">
+    <link rel="stylesheet" href="./src/css/hero_infobutton.css">
+    <link rel="stylesheet" href="./src/css/hero_proceedbutton.css">
+    <link rel="stylesheet" href="./src/css/seleccionador_hover1.css">
+
+
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body class="font-sans">
     <!-- Menú de navegación -->
     <header id="navbar" class="absolute top-0 left-0 w-full z-50">
-        <nav class="w-[100%] mx-auto">
-            <div class="flex justify-between items-center bg-white px-4 py-2">
+        <nav class="w-[100%] mx-auto navegacion">
+            <div class="contenedor__menu flex justify-between items-center bg-white px-4">
                 <div>
-                    <img class="w-12 md:w-16 cursor-pointer" src="src/svg/logotipo2.svg" alt="...">
+                    <img class="w-12 md:w-16 cursor-pointer" src="src/svg/logo__1.svg" alt="...">
                 </div>
                 <div
                     class="nav-links duration-500 md:static fixed bg-white md:min-h-fit min-h-screen left-0 -top-[100vh] md:w-auto w-full flex items-center px-5 md:px-0">
-                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 w-full">
-                        <li>
-                            <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                    <ul class="subtitulo flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-8 w-full">
+                        <li id="li1" class="bg-lightblue px-7 py-2 rounded-s-md">
+                            <a class="font-semibold text-blue-700 hover:text-blue-500 text-sm md:text-base"
                                 href="#">Principal</a>
                         </li>
-                        <li>
-                            <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                        <li id="li2" class="bg-green-600 px-5 py-2">
+                            <a class="font-semibold text-blue-700 hover:text-blue-500 text-sm md:text-base"
                                 href="#">Solución</a>
                         </li>
-                        <li>
-                            <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                        <li id="li3" class="bg-amber-500 px-5 py-2">
+                            <a class="font-semibold text-blue-700 hover:text-blue-500 text-sm md:text-base"
                                 href="#">Beneficios</a>
                         </li>
-                        <li>
-                            <a class="font-bold text-blue-700 hover:text-blue-500 text-sm md:text-base"
+                        <li id="li4"class="bg-amber-700 px-5 py-2">
+                            <a class="font-semibold text-blue-700 hover:text-blue-500 text-sm md:text-base"
                                 href="#">Resultados</a>
                         </li>
                         <!-- <li>
@@ -68,15 +74,24 @@
         <!-- Sección 1: Hero -->
         <!-- Hero Section -->
         <header id="hero" class="flex flex-col justify-center items-center h-screen text-center px-4 pt-10 md:pt-0">
-            <h1 class="text-3xl md:text-6xl font-bold text-blue-700">
-                Llenamos tu agenda con pacientes <br>
-                <span id="typewriter" class="text-blue-900"></span>
+            <h1 class="titulo">
+                <span class="text-7xl font-bold text-lightblue ">LLENAMOS TU AGENDA</span>
+                <br>
+                <span class="text-5xl font-semibold text-darkblue ">
+                    CON PACIENTES
+                    <span class="text-6xl font-bold text-darkblue">CALIFICADOS</span>
+                </span>
+                <br>
+                <span class="text-6xl font-bold text-darkblue">
+                    EN MENOS DE 
+                    <span class="font-bold text-lightblue">30 DÍAS</span>
+                </span>
             </h1>
-            <p class="text-base md:text-xl mt-4 text-blue-600">
-                Si no, trabajamos GRATIS hasta lograrlo.
-            </p>
+            <span class="subtitulo text-base font-semibold md:text-2xl mt-4 text-darkblue">
+                Si no, trabajamos <span class="text-mintgreen font-bold">GRATIS</span> hasta lograrlo.
+            </span>
             <div class="mt-6 flex flex-col md:flex-row gap-4">
-                <a href="#cta">
+                <a href="#cta" class="cursor-pointer">
                     <button
                         class="flex items-center rounded-md bg-blue-500 px-4 py-2 text-sm md:text-base font-semibold text-white shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 fill-white mr-2">
@@ -86,7 +101,7 @@
                         Quiero llenar mi agenda
                     </button>
                 </a>
-                <a href="#releases">
+                <a href="#releases" class="cursor-pointer">
                     <button
                         class="rounded-md bg-transparent border border-blue-500 px-4 py-2 text-sm md:text-base font-semibold text-blue-500 shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                         Más información

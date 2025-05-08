@@ -1,0 +1,11 @@
+#navbar .navegacion .contenedor__menu .nav-links .st0 {
+  background: #007BEA !important;
+  background: rgba(0, 123, 234, 1) !important;
+  width: 367px !important;
+  height: 61px !important;
+  border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+  box-shadow: 0px 0px 5px rgba(3, 103, 247, 0.75) !important;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#0367F7') !important;
+}
