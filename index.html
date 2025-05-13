@@ -36,12 +36,12 @@
     <!-- Menú de navegación -->
     <header id="navbar" class="fixed top-0 left-0 w-full z-50">
         <nav class="w-[100%] mx-auto navegacion ">
-            <div class="contenedor__menu flex  justify-between items-center h-15 bg-white">
+            <div class="contenedor__menu flex  justify-between items-center h-12 bg-white">
                 <div class="flex items-center h-full px-4">
                     <img class="logo w-10 sm:w-12 md:w-14 cursor-pointer" src="src/svg/logo__5.svg" alt="...">
                 </div>
                 <div
-                    class="nav-links md:h-[60px] duration-500 md:static fixed min-h-screen md:min-h-fit left-0 -top-[100vh] md:w-auto w-full flex bg-white md:bg-transparent">
+                    class="nav-links md:h-[48px] duration-500 md:static fixed min-h-screen md:min-h-fit left-0 -top-[100vh] md:w-auto w-full flex bg-white md:bg-transparent">
                     <ul
                         class="subtitulo__1 flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-0 w-full h-full pt-16 md:pt-0 relative">
                         <div id="menu-slider"
@@ -49,22 +49,22 @@
                         </div>
                         <li id="li1"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
-                            <a class="font-semibold text-sm md:text-base subtitulo text-white w-full text-center md:text-left"
+                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
                                 href="#" onclick="selectMenuItem('li1')">Principal</a>
                         </li>
                         <li id="li2"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
-                            <a class="font-semibold text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
+                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
                                 href="#" onclick="selectMenuItem('li2')">Solución</a>
                         </li>
                         <li id="li3"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
-                            <a class="font-semibold text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
+                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
                                 href="#" onclick="selectMenuItem('li3')">Beneficios</a>
                         </li>
                         <li id="li4"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
-                            <a class="font-semibold text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
+                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
                                 href="#" onclick="selectMenuItem('li4')">Resultados</a>
                         </li>
                     </ul>
@@ -78,50 +78,56 @@
     </header>
 
     <!-- Contenido principal -->
-    <main class="">
-        <!-- Sección 1: Hero -->
-        <!-- Hero Section -->
-        <header id="hero"
-            class="flex flex-col justify-center  items-center h-screen text-center sm:px-0 md:px-4 pt-10 ">
-            <h1 class="titulo flex flex-col sm:gap-2 md:gap-3">
-                <span
-                    class="text-[30px] sm:text-[50px] md:text-[70px] lg:text-[80px] font-bold text-lightblue leading-none">LLENAMOS
-                    TU AGENDA</span>
-                <span
-                    class="text-[20px] sm:text-[30px] md:text-[50px]  lg:text-[60px] font-semibold text-darkblue leading-none ">
-                    CON PACIENTES
-                    <span class="font-bold text-darkblue">CALIFICADOS</span>
+    <main class="relative">
+        <!-- Imágenes de fondo -->
+        <div class="absolute inset-0 z-0">
+            <img src="src/svg/logo__1.svg" alt="Imagen de fondo 1" class="absolute top-0 left-0 w-full h-full object-cover opacity-20 blur-sm">
+            <img src="src/images/background2.jpg" alt="Imagen de fondo 2" class="absolute top-0 left-0 w-full h-full object-cover opacity-20 blur-sm">
+        </div>
+        
+        <!-- Degradado de fondo -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#EEF7FF] to-[#F9F9F9] z-10"></div>
+
+        <!-- Sección Hero -->
+        <header id="hero" class="relative z-20 flex flex-col justify-center items-center h-screen text-center sm:px-0 md:px-4 pt-10">
+            <h1 class="titulo flex flex-col sm:gap-1 md:gap-2">
+                <span class="text-[22px] sm:text-[32px] md:text-[40px] lg:text-[52px] font-black text-lightblue leading-none w-full text-center">
+                    LLENAMOS TU AGENDA
                 </span>
-                <span
-                    class="text-[25px] sm:text-[30px] md:text-[40px] lg:text-[60px] font-bold text-darkblue leading-none">
+                <span class="text-[16px] sm:text-[22px] md:text-[28px] lg:text-[40px] font-semibold text-darkblue leading-none w-full text-center">
+                    CON PACIENTES
+                    <span class="font-extrabold text-darkblue">CALIFICADOS</span>
+                </span>
+                <span class="text-[18px] sm:text-[22px] md:text-[28px] lg:text-[32px] font-extrabold text-darkblue leading-none">
                     EN MENOS DE
-                    <span id="typewriter" class="font-bold text-lightblue"></span>
+                    <span id="typewriter" class="font-extrabold text-lightblue"></span>
                 </span>
             </h1>
-            <span class="subtitulo  sm:text-[15px] md:text-[40px] lg:text-[40px] font-semibold text-darkblue">
-                Si no, trabajamos <span class="text-mintgreen font-bold">GRATIS</span> hasta lograrlo
+            <span class="subtitulo__2 sm:text-[13px] md:text-[18px] lg:text-[28px] text-darkblue mt-4">
+                Sino, trabajamos <span class="text-mintgreen font-bold">GRATIS</span> hasta lograrlo
             </span>
-            <div class="mt-5 flex flex-col md:flex-row gap-4">
+            <div class="mt-7 flex flex-col md:flex-row gap-4">
                 <a href="#cta" class="">
-                    <button
-                        class="cursor-pointer flex items-center rounded-md bg-blue-500 px-4 py-2 text-sm md:text-base font-semibold text-white shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 fill-white mr-2">
-                            <path
-                                d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16l-97.5 0c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8l97.5 0c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32L0 448c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-224c0-17.7-14.3-32-32-32l-64 0z" />
-                        </svg>
+                    <button class="cursor-pointer flex items-center rounded-md bg-blue-500 px-4 py-2 text-xs md:text-lg font-semibold text-white shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                         Quiero llenar mi agenda
                     </button>
                 </a>
                 <a href="#releases" class="">
-                    <button
-                        class="cursor-pointer rounded-md bg-transparent border border-blue-500 px-4 py-2 text-sm md:text-base font-semibold text-blue-500 shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
+                    <button class="cursor-pointer rounded-md bg-transparent border border-blue-500 px-4 py-2 text-xs md:text-lg font-normal text-blue-500 shadow-lg shadow-blue-500/50 focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                         Más información
                     </button>
                 </a>
             </div>
+            <p class="subtitulo mt-2 text-center text-[0px] md:text-[14px] text-darkblue font-normal max-w-2xl mx-auto">
+                Especialistas en marketing digital para profesionales de la salud:  <br> odontología, estética, fisioterapia y más
+            </p>
+            <div class="mt-3 flex justify-center">
+                <div class="rounded-full bg-mintgreen shadow-lg px-4 py-2 text-center max-w-2xl w-full">
+                    <span class="font-bold text-white text-[15px] md:text-[18px] leading-none">Agenda hoy una llamada gratuita y descubre</span>
+                    <span class="block text-white text-[13px] md:text-[18px] font-normal leading-none">cómo lo vamos a aplicar en tu negocio</span>
+                </div>
+            </div>
         </header>
-
-
 
         <!-- Sección 2: Beneficios -->
         <!-- <section id="beneficios" class="py-16 px-4 bg-white">
@@ -215,11 +221,9 @@
                 const index = Array.from(menuItems).indexOf(selectedItem);
 
                 if (window.innerWidth < 768) {
-                    // En móvil, calculamos la posición basada en el índice y altura del elemento
-                    const itemHeight = 40; // altura de cada elemento en píxeles
+                    const itemHeight = 40;
                     slider.style.transform = `translateY(${index * itemHeight}px)`;
                 } else {
-                    // En desktop, movemos en X como antes
                     const selectedRect = selectedItem.getBoundingClientRect();
                     const menuRect = menuList.getBoundingClientRect();
                     const newLeft = selectedRect.left - menuRect.left;
@@ -230,11 +234,11 @@
                 menuItems.forEach(item => {
                     const link = item.querySelector('a');
                     if (item.id === selectedId) {
-                        link.classList.remove('text-blue-700', 'hover:text-darkblue');
-                        link.classList.add('text-white');
+                        link.classList.remove('font-normal');
+                        link.classList.add('font-bold', 'text-white');
                     } else {
-                        link.classList.remove('text-white');
-                        link.classList.add('text-blue-700', 'hover:text-darkblue');
+                        link.classList.remove('font-bold', 'text-white');
+                        link.classList.add('font-normal');
                     }
                 });
             }
