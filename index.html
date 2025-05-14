@@ -45,23 +45,24 @@
                         <li id="li1"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
                             <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
-                                href="#" onclick="selectMenuItem('li1')">Principal</a>
+                                href="#hero" onclick="selectMenuItem('li1')">Principal</a>
                         </li>
                         <li id="li2"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
                             <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
-                                href="#" onclick="selectMenuItem('li2')">Solución</a>
-                        </li>
-                        <li id="li3"
-                            class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
-                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
-                                href="#" onclick="selectMenuItem('li3')">Beneficios</a>
+                                href="#beneficios" onclick="selectMenuItem('li2')">Solución</a>
                         </li>
                         <li id="li4"
                             class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
                             <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
-                                href="#" onclick="selectMenuItem('li4')">Resultados</a>
+                                href="#resultados" onclick="selectMenuItem('li4')">Resultados</a>
                         </li>
+                        <li id="li3"
+                            class="relative z-10 flex items-center h-[40px] md:h-full w-full px-7 transition-all duration-300 overflow-hidden">
+                            <a class="font-normal text-sm md:text-base text-blue-700 hover:text-darkblue w-full text-center md:text-left"
+                                href="#funcionamiento" onclick="selectMenuItem('li3')">Beneficios</a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="flex items-center h-full px-4">
@@ -90,7 +91,7 @@
         class="relative z-20 flex flex-col justify-center items-center h-[60vh] md:h-screen text-center sm:px-0 md:px-4 pt-10 overflow-hidden">
             <!-- Imagen de fondo: cruz a la izquierda, centrada vertical -->
             <img src="src/svg/logoclaro.svg" alt="Cruz decorativa"
-                class="left-10 absolute  top-1/2 -translate-y-1/2 w-40 h-40 md:w-100 md:h-90 z-0 pointer-events-none select-none" />
+                class="left-10 absolute  top-1/2 -translate-y-1/2 w-40 h-40 md:w-100 md:h-90 z-0 opacity-50 pointer-events-none select-none" />
             <!-- Imagen de fondo: doctores a la derecha, centrada vertical -->
             <img src="src/webs/landing_stockphotosectionhero.webp" alt="Doctores decorativos"
                 class="absolute right-0 top-1/2 -translate-y-1/2 w-56 h-56 md:w-100 md:h-110 opacity-40 z-0 pointer-events-none select-none" />
@@ -147,9 +148,12 @@
         </header>
 
         <!-- Sección 2: Beneficios -->
-        <section id="beneficios" class="relative z-20 py-16 px-4 bg-darkblue section_menu overflow-hidden">
-
-            <div class="relative z-20 mx-auto text-center container_section">
+        <section id="beneficios" class="relative z-20  section_menu overflow-hidden min-h-[600px] p-0 m-0">
+            
+            <div class="absolute right-0 top-0 bottom-0 h-full w-1/2 m-0 p-0 overflow-visible">
+                <img class="absolute right-0 top-0 h-full w-auto object-contain md:object-cover m-0 p-0" src="src/webs/crecimiento_freepikimagesection2.webp" alt="Imagen de crecimiento" style="right: 0; max-width: none;"/>
+            </div>
+            <div class="relative z-20 text-center container_section mt-12" style="margin-right: 0;">
                 <div class="flex flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto">
                     <h2 class="text-4xl max-sm:text-{10px} md:text-5xl font-extrabold text-white leading-tight text-left">
                         <span class="block">TE OFRECEMOS</span>
@@ -171,28 +175,23 @@
                         <ul
                             class="mt-6 bg-blue-500/90 rounded-3xl px-10 py-6 flex flex-col gap-3 w-full max-w-2xl shadow-lg">
                             <li class="flex items-center text-white text-lg">
-                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><span
-                                        class="subtitulo__2 mr-3 text-2xl">✔️</span></div>
+                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><img src="src/svg/check_icon.svg" alt=""></div>
                                 <span><b>Citas con pacientes reales</b> y listos para agendar</span>
                             </li>
                             <li class="flex items-center text-white text-lg">
-                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><span
-                                        class=" mr-3 text-2xl">✔️</span></div>
+                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><img src="src/svg/check_icon.svg" alt=""></div>
                                 <span><b>Automatización del seguimiento</b> (WhatsApp + Email)</span>
                             </li>
                             <li class="flex items-center text-white text-lg">
-                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><span
-                                        class="mr-3 text-2xl">✔️</span></div>
+                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><img src="src/svg/check_icon.svg" alt=""></div>
                                 <span><b>Anuncios estratégicos</b> en Meta y Google</span>
                             </li>
                             <li class="flex items-center text-white text-lg">
-                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><span
-                                        class="mr-3 text-2xl">✔️</span></div>
+                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><img src="src/svg/check_icon.svg" alt=""></div>
                                 <span><b>Posicionamiento SEO</b> local para aparecer en Google</span>
                             </li>
                             <li class="flex items-center text-white text-lg">
-                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><span
-                                        class="mr-3 text-2xl">✔️</span></div>
+                                <div class="w-6 h-6 rounded-full bg-mintgreen me-3"><img src="src/svg/check_icon.svg" alt=""></div>
                                 <span>Sin riesgo: <span class="font-bold text-white">garantizamos resultados</span> o
                                     trabajamos gratis</span>
                             </li>
@@ -223,7 +222,7 @@
         </section>
 
         <!-- Sección 3: Resultados -->
-        <section id="testimonios" class="relative z-20 py-16 px-4 bg-darkblue">
+        <section id="resultados" class="relative z-20 py-16 px-4">
             <div class="flex flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight text-center">
                     <span class="block text-white">RESULTADOS</span>
@@ -232,16 +231,61 @@
             </div>
         </section> 
 
-        <!-- Sección 3: Testimonios -->
-        <section id="testimonios" class="relative z-20 py-16 px-4 bg-amber-300">
-            <div class="flex flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight  text-left">
-                    <span class="block text-darkblue">¿CÓMO</span>
-                    <span class="block text-white">FUNCIONA?</span>
-                </h2>
-                <img src="RUTA_DE_TU_ICONO.svg" alt="icono" class="w-24 h-24 flex-shrink-0" />
+        <!-- Sección 3: funcionamiento -->
+        <section id="funcionamiento" class="relative z-20 py-16 overflow-hidden" style="padding-right: 0;">
+            <div class="container mx-auto pl-4 pr-0 relative">
+                <!-- Contenido central -->
+                <div class="max-w-md py-7 flex justify-center m">
+                    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                        <span class="block text-darkblue">¿CÓMO</span>
+                        <span class="block text-white">FUNCIONA?</span>
+                    </h2>
+                </div>
+                
+                <!-- Imagen pegada a la derecha -->
+                <div class="absolute top-1/2 right-0 transform -translate-y-1/2" style="margin-right: 0; padding-right: 0;">
+                    <img src="./src/svg/sinwave_object.svg" alt="icono" class="h-40 w-80" style="margin-right: 0; padding-right: 0;" />
+                </div>
             </div>
         </section> 
+
+        <section id="garantia" class="relative z-20 py-16 px-4 bg-gray-900 ">
+            apartado de garantía de resultados de los resultados 
+        </section> 
+
+        <section id="garantia" class="relative z-20 py-16 px-4 bg-gray-900 ">
+            apartado del calendy para un formulario o un calendario de citas  
+        </section> 
+
+        <footer class="relative z-20 bg-darkblue w-full py-6 px-2">
+            <!-- Contenedor superior: logo + nombre + iconos -->
+            <div class="max-w-5xl mx-auto flex flex-col items-center">
+                <div class="flex flex-row items-center justify-center gap-6 w-full mb-5">
+                    <!-- Logo y nombre -->
+                    <div class="flex items-center">
+                        <img src="src/svg/logopacienteideal.svg" alt="Logo Paciente Ideal" class="logo-white-svg h-10 w-30" />
+                    </div>
+                    <!-- Iconos redes sociales -->
+                    <div class="flex items-center gap-4 ml-4">
+                        <a href="#" aria-label="WhatsApp"><img src="src/svg/whatsapp_icon.svg" alt="WhatsApp" class="h-6 w-6" /></a>
+                        <a href="#" aria-label="Instagram"><img src="src/svg/ig_appicon.svg" alt="Instagram" class="h-6 w-6" /></a>
+                        <a href="#" aria-label="Facebook"><img src="src/svg/fb_appicon.svg" alt="Facebook" class="h-6 w-6" /></a>
+                        <a href="#" aria-label="LinkedIn"><img src="src/svg/linkdin_appicon.svg" alt="LinkedIn" class="h-6 w-6" /></a>
+                    </div>
+                </div>
+                <!-- Texto legal -->
+                <div class="text-left text-white text-xs derechos">
+                    © 2025. Todos los derechos reservados, Pacientelideal® es una marca comercial de MoreSalesDigitalAgency®<br>
+                    La marca registrada Pacientelideal® es propiedad intelectual de MoreSalesDigitalAgency®
+                </div>
+                <!-- Línea divisoria -->
+                <hr class="border-[#cccccc linea" />
+                <!-- Texto final -->
+                <div class="text-center text-white text-xs">
+                    © 2025. Pacientelideal.com
+                </div>
+            </div>
+        </footer>
 
         <!-- Sección 4: CTA Final -->
         <!-- <section id="cta-final" class="py-16 px-4 bg-teal-500 text-white text-center">
