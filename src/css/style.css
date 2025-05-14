@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    background: linear-gradient(180deg, #ffffff, #eef7ff);
+    /* Fondo blanco a azul claro */
+}
+
 .titulo {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -40,56 +45,6 @@ html {
     font-style: normal;
 }
 
-
-main {
-    background: linear-gradient(180deg, #ffffff, #eef7ff);
-    /* Fondo blanco a azul claro */
-}
-
-#navbar {
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#navbar a {
-    transition: color 0.3s ease;
-}
-
-#hero {
-    background: linear-gradient(180deg, #e0f7fa, #ffffff);
-    /* Fondo azul claro a blanco */
-}
-
-#beneficios {
-    background: url(../svg/section2_background.svg);
-    background-color: white;
-}
-
-#resultados {
-    background: url(../svg/section3_gradientbackground.svg) no-repeat;
-    background-size: auto;
-    background-color: #007BEA;
-    height: 110vh;
-}
-
-#funcionamiento {
-    background: url(../svg/section4_gradientbckground.svg) no-repeat;
-
-    background-size: auto;
-    height: 118vh;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-
-}
-
-#bocaboca{
-    background: url(../svg/section6_gradientbackground.svg) no-repeat;
-    background-size: auto;
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-}
 .logo-white-svg {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);
 }
@@ -103,6 +58,79 @@ main {
 .derechos {
     margin-bottom: 10px;
 }
+
+
+#navbar {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar a {
+    transition: color 0.3s ease;
+}
+
+/* seccion 1 */
+#hero {
+    background: linear-gradient(180deg, #e0f7fa, #ffffff);
+    /* Fondo azul claro a blanco */
+}
+
+/* seccion 2 */
+#beneficios {
+    background: url(../svg/section2_background.svg)  no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    /* Centra la imagen para minimizar el recorte de los bordes */
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* seccion 3 */
+#resultados {
+    background: url(../svg/section3_gradientbackground.svg) no-repeat;
+    background-color: #00255A;
+    background-size: cover;
+    background-position: center;
+    /* Centra la imagen para minimizar el recorte de los bordes */
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* seccion 4 */
+#funcionamiento {
+    background: url(../svg/section4_gradientbckground.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Centra la imagen para minimizar el recorte de los bordes */
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* seccion 5 */
+#garantia {
+    background: url(../svg/section5_bckground.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Centra la imagen para minimizar el recorte de los bordes */
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* seccion 6 */
+#bocaboca {
+    background: url(../svg/section6_gradientbackground.svg) no-repeat;
+    background-size: auto;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
 
 /* Estilos base para móviles pequeños (hasta 320px) - Opcional, ya que estos serían tus estilos por defecto */
 /* ... tus estilos base ... */
