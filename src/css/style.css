@@ -28,7 +28,7 @@ main {
 }
 
 .intel {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif !important;
 }
 
 .subtitulo__1 {
@@ -59,6 +59,18 @@ main {
     margin-bottom: 10px;
 }
 
+.contenedorImg {
+    overflow: hidden;
+}
+
+
+.texto-seccion2 .texto:nth-child(1), .texto-seccion2 .texto:nth-child(3) {
+    font-size: 3.5rem;
+}
+
+.texto-seccion2 .texto:nth-child(2), .texto-seccion2 .texto:nth-child(4) {
+    font-size: 2rem;
+}
 
 #navbar {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -68,7 +80,7 @@ main {
 #navbar a {
     transition: color 0.3s ease;
 }
-
+/* 
 /* seccion 1 */
 #hero {
     background: linear-gradient(180deg, #e0f7fa, #ffffff);
@@ -76,28 +88,20 @@ main {
 }
 
 /* seccion 2 */
-#beneficios {
+/* #beneficios {
     background: url(../svg/section2_background.svg)  no-repeat;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    /* Centra la imagen para minimizar el recorte de los bordes */
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
+} */
 
-/* seccion 3 */
-#resultados {
+/* #resultados {
     background: url(../svg/section3_gradientbackground.svg) no-repeat;
     background-color: #00255A;
-    background-size: cover;
+    background-size: 100% auto; 
     background-position: center;
-    /* Centra la imagen para minimizar el recorte de los bordes */
+    
     position: relative;
     height: 100%;
     width: 100%;
-}
+} */
 
 /* seccion 4 */
 #funcionamiento {
@@ -124,11 +128,12 @@ main {
 
 /* seccion 6 */
 #bocaboca {
-    background: url(../svg/section6_gradientbackground.svg);
+    background: url(../svg/section6_gradientbackground.svg) ;
     background-size: auto;
-    background-color: rgb(238, 0, 0);
+    background-color: transparent;
     width: 100%;
 }
+
 
 
 /* Estilos base para móviles pequeños (hasta 320px) - Opcional, ya que estos serían tus estilos por defecto */
@@ -141,62 +146,25 @@ main {
     .logo {
         width: 100px;
     }
+    .cruz__section1 {
+        display: none;
+    }
 
 }
 
 /* Estilos responsivos para la sección bocaboca */
 @media (max-width: 768px) {
-    #bocaboca .text-4xl {
-        font-size: 1.75rem; /* Reducción del tamaño de fuente */
-        line-height: 2.25rem;
-    }
-
-    #bocaboca button {
-        font-size: 1rem; /* Reducción del tamaño de fuente de los botones */
-        padding: 0.75rem 1.5rem; /* Ajuste del padding */
-    }
-
-    #bocaboca .circulo1 {
-        width: 4rem;
-        height: 4rem;
-        bottom: -10px;
-        left: 5px;
-    }
-
-    #bocaboca .circulo2 {
-        width: 4rem;
-        height: 4rem;
-        top: -35px;
-        right: 15px;
-    }
-
-    #bocaboca img[src*="grid_object"] {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
     #bocaboca {
         background: url(../svg/section6_gradientbackground.svg) no-repeat;
     }
 }
 
 @media (max-width: 480px) {
-    #bocaboca .text-4xl {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 0 1rem;
-    }
-
-    #bocaboca button {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-        width: 90%;
-        max-width: 300px;
-    }
+  
 
     #bocaboca .circulo1 {
-        width: 3rem;
-        height: 3rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     #bocaboca .circulo2 {
@@ -204,8 +172,17 @@ main {
         height: 3rem;
     }
 
+    #bocaboca .cuadrado1 {
+        width: 5rem;
+        height: 5rem;
+    }
+
     #bocaboca img[src*="grid_object"] {
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
+
+/* Estilos para pantallas grandes (1920px - monitores 24") */
+
+ 

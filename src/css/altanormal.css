@@ -1,0 +1,42 @@
+/* Estilos para pantallas extra grandes (2560px - monitores 27" y superiores) */
+@media (min-width: 2560px) {
+    #bocaboca {
+        padding: 6rem 0;
+    }
+
+    #bocaboca .text-4xl {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #bocaboca button {
+        font-size: 1.75rem;
+        padding: 1.25rem 3rem;
+        margin: 1rem 0;
+    }
+
+    #bocaboca .circulo1 {
+        width: 12rem;
+        height: 12rem;
+        bottom: -40px;
+        left: 20%;
+    }
+
+    #bocaboca .circulo2 {
+        width: 10rem;
+        height: 10rem;
+        top: -60px;
+        right: 20%;
+    }
+
+    #bocaboca img[src*="grid_object"] {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    #bocaboca .flex {
+        gap: 2rem;
+    }
+}
