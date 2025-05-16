@@ -1,23 +1,33 @@
 /* Media query para pantallas de 1920px o más */
 @media (min-width: 1920px) {
-   .logoclarodoc{
+    .logoclarodoc {
         left: 350px;
-   }
-   .parrafoHero{
-        font-size: 15px;
-   }
-
-
-   /* section2 */
-   /* .letras-section2{
-    left: 200px;
-   }
-    .nt1, .nt3{
-        font-size: 95px;
-        
     }
-    .nt2, .nt4{
-        font-size: 70px;
-    } */
+
+    .parrafoHero {
+        font-size: 1rem; /* Ajusta el valor según tu diseño base para pantallas grandes */
+    }
+
+
+    /* section2 */
+    .letras-section2 {
+        left: 200px;
+    }
+
+    
+
+    .img1 {
+        width: 20%;
+        right: 9vw !important;
+    }
+
+    #garantia {
+        margin-top: -115px !important;
+    }
+
+    #bocaboca {
+        top: -60px !important;
+    }
+
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }

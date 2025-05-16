@@ -79,6 +79,24 @@ main {
 .conte_flecha div img{
     
 }
+
+.nt5{
+    font-size: 7vw;
+}
+
+.nt1,
+    .nt3 {
+        font-size: 5.9375em;
+        /* Equivalente a 95px si el base es 16px */
+    }
+
+    .nt2,
+    .nt4 {
+        font-size: 4.375em;
+        /* Equivalente a 70px si el base es 16px */
+    }
+
+
 #navbar {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;

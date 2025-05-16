@@ -156,7 +156,8 @@
                             </button>
                         </a>
                     </div>
-                    <p class="parrafoHero hidden md:block intel text-[0px] md:text-[14px] text-darkblue font-normal mx-auto">
+                    <p
+                        class="parrafoHero hidden md:block intel text-[0px] md:text-[14px] text-darkblue font-normal mx-auto">
                         Especialistas en marketing digital para profesionales de la salud: <br> odontología, estética,
                         fisioterapia y más
                     </p>
@@ -198,7 +199,7 @@
             <div class="absolute right-0 top-0 bottom-0 h-full w-1/2 m-0 p-0 overflow-visible">
                 <img class="absolute right-0 top-0 h-full w-auto object-contain md:object-cover m-0 p-0"
                     src="src/webs/crecimiento_freepikimagesection2.webp" alt="Imagen de crecimiento"
-                    style="right: -17px; max-width: none;" />
+                    style="right: -6%; max-width: none;" />
             </div>
             <div class="relative w-full min-h-[500px] flex items-center flex-col justify-center">
                 <!-- Texto de fondo, posicionado absolutamente a la izquierda -->
@@ -211,7 +212,8 @@
                     </h2>
                     <img src="src/svg/icon_integration2.svg" alt="icono" class="w-40 h-40 flex-shrink-0" />
                 </div>
-                <div class="absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0 letras-section2">
+                <div
+                    class="w-full absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0 letras-section2">
                     <h1 class="text-left opacity-5 text-white leading-none font-black ">
                         <span class="block text-[70px] nt1">¿QUÉ</span>
                         <span class="block font-bold text-[40px]  nt2">CONSIGUES</span>
@@ -553,14 +555,16 @@
         </svg>
 
         <div class="flex flex-col items-center justify-center w-full z-20 mt-10 gap-8">
-            <div class="flex flex-row w-full h-full pl-60">
+            <div class="flex flex-row w-full pl-60">
                 <div class="flex flex-col  text-left mr-10">
-                    <h2 class="text-4xl md:text-7xl font-extrabold leading-tight  mb-4">
+                    <h2 class="text-4xl md:text-7xl font-extrabold leading-tight  mb-4 nt5">
                         <span class="block text-darkblue">¿CÓMO</span>
                         <span class="block text-white">FUNCIONA?</span>
                     </h2>
                 </div>
-                <div class="flex items-center justify-end   h-full">
+                <div class="flex  justify-end h-full bg-red-600" style="
+                width: 100%;
+            ">
                     <img src="./src/svg/sinwave_object.svg" alt="icono" class="h-60 max-h-60 w-auto object-contain" />
                 </div>
             </div>
@@ -602,7 +606,7 @@
                 </ol>
             </div>
 
-            <div class="flex justify-center items-center w-full mb-30 relative z-20">
+            <div class="flex justify-center items-end-safe w-full mb-30 relative z-20">
                 <a href="#solicitar-agenda">
                     <button
                         class="flex cursor-pointer items-center justify-center gap-2 h-10  bg-mintgreen text-white font-bold px-5 rounded-lg shadow transition-all duration-300 hover:-translate-y-1 text-2xl"
@@ -617,15 +621,15 @@
                     </button>
                 </a>
             </div>
-            <div class="flex absolute justify-between items-center w-full z-10">
+            <div class="flex absolute justify-between h-full w-full z-10" style="align-items: flex-end;">
                 <img src="src/svg/scale_object.svg" alt="" class="w-40 h-auto object-contain order-1 ml-10 " style="
-                bottom: -83px;
+                bottom: -22px;
                 position: relative;
                 ">
 
-                <img src="src/svg/clear_logo.svg" alt="" class="w-60 h-auto object-contain order-2" style="
+                <img src="src/svg/clear_logo.svg" alt="" class="w-60 h-auto object-contain order-2 img1" style="
                 position: relative;
-                top: 3rem;
+                top: -12vw;
                 right: 4rem;
                     ">
             </div>
@@ -635,10 +639,10 @@
 
 
     <!-- ===== SECCIÓN GARANTIA ===== -->
-    <section id="garantia" class="w-screen h-screen flex  relative z-10" style="margin-top: -70px;">
+    <section id="garantia" class="w-screen  flex  relative z-10" style="margin-top: -70px;">
         <!-- SVG de fondo, debe quedar detrás de todo el contenido y ocupar todo el ancho y alto -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.19 1024.6" class="absolute inset-0 object-cover z-0"
-            style="min-height:100vh; min-width:100vw;">
+            style="">
             <defs>
                 <style>
                     .fondo5 {
@@ -999,6 +1003,39 @@
             `;
             }
         });
+
+
+        function ajustarTamanoLetras() {
+            const anchoVentana = window.innerWidth;
+            const nt1Elements = document.querySelectorAll('.nt1');
+            const nt2Elements = document.querySelectorAll('.nt2');
+            const nt3Elements = document.querySelectorAll('.nt3');
+            const nt4Elements = document.querySelectorAll('.nt4');
+
+            let tamanoNt1 = 70; // Tamaño base
+            let tamanoNt2 = 40; // Tamaño base
+
+            if (anchoVentana > 1920) {
+                tamanoNt1 = 95; // Tamaño para pantallas grandes
+                tamanoNt2 = 70; // Tamaño para pantallas grandes
+            } else if (anchoVentana < 768) {
+                tamanoNt1 = 40; // Tamaño para pantallas pequeñas
+                tamanoNt2 = 25; // Tamaño para pantallas pequeñas
+            } else {
+                // Puedes definir rangos intermedios y calcular tamaños basados en el ancho
+                tamanoNt1 = 70 + (anchoVentana - 768) * 0.02; // Ejemplo de interpolación lineal
+                tamanoNt2 = 40 + (anchoVentana - 768) * 0.01; // Ejemplo de interpolación lineal
+            }
+
+            nt1Elements.forEach(element => element.style.fontSize = `${tamanoNt1}px`);
+            nt2Elements.forEach(element => element.style.fontSize = `${tamanoNt2}px`);
+            nt3Elements.forEach(element => element.style.fontSize = `${tamanoNt1}px`);
+            nt4Elements.forEach(element => element.style.fontSize = `${tamanoNt2}px`);
+        }
+
+        // Llama a la función al cargar la página y al redimensionar la ventana
+        window.onload = ajustarTamanoLetras;
+        window.addEventListener('resize', ajustarTamanoLetras);
     </script>
 
 </body>
