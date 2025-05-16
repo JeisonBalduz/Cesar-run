@@ -28,7 +28,7 @@ main {
 }
 
 .intel {
-    font-family: "Inter", sans-serif !important;
+    font-family: "Inter", sans-serif;
 }
 
 .subtitulo__1 {
@@ -58,20 +58,27 @@ main {
 .derechos {
     margin-bottom: 10px;
 }
-
-.contenedorImg {
-    overflow: hidden;
+.content-img {
+  
+   
+    /* No es necesario definir altura y anchura fijas aquí si quieres que el contenedor se ajuste al contenido */
+    /* Si necesitas un tamaño fijo, mantenlo, pero considera cómo afectará al ajuste de la imagen */
+  
 }
 
-
-.texto-seccion2 .texto:nth-child(1), .texto-seccion2 .texto:nth-child(3) {
-    font-size: 3.5rem;
+.content-img img {
+    object-fit:fill; /* Cambiamos a "contain" para que la imagen completa sea visible */
+    width: 100%;      /* Aseguramos que la imagen intente ocupar todo el ancho del contenedor */
+    height: 100%;     /* Aseguramos que la imagen intente ocupar toda la altura del contenedor */
 }
 
-.texto-seccion2 .texto:nth-child(2), .texto-seccion2 .texto:nth-child(4) {
-    font-size: 2rem;
+.conte_flecha{
+   
 }
 
+.conte_flecha div img{
+    
+}
 #navbar {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -80,7 +87,7 @@ main {
 #navbar a {
     transition: color 0.3s ease;
 }
-/* 
+
 /* seccion 1 */
 #hero {
     background: linear-gradient(180deg, #e0f7fa, #ffffff);
@@ -88,51 +95,18 @@ main {
 }
 
 /* seccion 2 */
-/* #beneficios {
-    background: url(../svg/section2_background.svg)  no-repeat;
-} */
 
-/* #resultados {
-    background: url(../svg/section3_gradientbackground.svg) no-repeat;
-    background-color: #00255A;
-    background-size: 100% auto; 
-    background-position: center;
-    
-    position: relative;
-    height: 100%;
-    width: 100%;
-} */
+
+/* seccion 3 */
+
 
 /* seccion 4 */
-#funcionamiento {
-    background: url(../svg/section4_gradientbckground.svg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* Centra la imagen para minimizar el recorte de los bordes */
-    position: relative;
-    height: 100%;
-    width: 100%;
 
-}
 
 /* seccion 5 */
-#garantia {
-    background: url(../svg/section5_bckground.svg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* Centra la imagen para minimizar el recorte de los bordes */
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
+
 
 /* seccion 6 */
-#bocaboca {
-    background: url(../svg/section6_gradientbackground.svg) ;
-    background-size: auto;
-    background-color: transparent;
-    width: 100%;
-}
 
 
 
@@ -146,25 +120,59 @@ main {
     .logo {
         width: 100px;
     }
-    .cruz__section1 {
-        display: none;
-    }
 
 }
 
 /* Estilos responsivos para la sección bocaboca */
 @media (max-width: 768px) {
-    #bocaboca {
-        background: url(../svg/section6_gradientbackground.svg) no-repeat;
+    #bocaboca .text-4xl {
+        font-size: 1.75rem; /* Reducción del tamaño de fuente */
+        line-height: 2.25rem;
     }
+
+    #bocaboca button {
+        font-size: 1rem; /* Reducción del tamaño de fuente de los botones */
+        padding: 0.75rem 1.5rem; /* Ajuste del padding */
+    }
+
+    #bocaboca .circulo1 {
+        width: 4rem;
+        height: 4rem;
+        bottom: -10px;
+        left: 5px;
+    }
+
+    #bocaboca .circulo2 {
+        width: 4rem;
+        height: 4rem;
+        top: -35px;
+        right: 15px;
+    }
+
+    #bocaboca img[src*="grid_object"] {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
 }
 
 @media (max-width: 480px) {
-  
+    #bocaboca .text-4xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
+
+    #bocaboca button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        width: 90%;
+        max-width: 300px;
+    }
 
     #bocaboca .circulo1 {
-        width: 6rem;
-        height: 6rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     #bocaboca .circulo2 {
@@ -172,17 +180,8 @@ main {
         height: 3rem;
     }
 
-    #bocaboca .cuadrado1 {
-        width: 5rem;
-        height: 5rem;
-    }
-
     #bocaboca img[src*="grid_object"] {
-        width: 2rem;
-        height: 2rem;
+        width: 1rem;
+        height: 1rem;
     }
 }
-
-/* Estilos para pantallas grandes (1920px - monitores 24") */
-
- 
