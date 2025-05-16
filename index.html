@@ -22,6 +22,7 @@
     <title>Marketing Digital para Profesionales de la Salud | Llena tu agenda en 30 días</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/layoutlarge.css">
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -109,7 +110,7 @@
         <div class="relative z-10 w-full h-full flex items-center justify-center">
             <!-- Imágenes decorativas -->
             <img src="src/svg/logoclaro.svg" alt="Cruz decorativa"
-                class="left-10 absolute top-1/2 -translate-y-1/2 w-40 h-40 md:w-110 md:h-100 z-10 opacity-100 pointer-events-none select-none" />
+                class="logoclarodoc left-10 absolute top-1/2 -translate-y-1/2 w-40 h-40 md:w-110 md:h-100 z-10 opacity-100 pointer-events-none select-none" />
             <img src="src/webs/landing_stockphotosectionhero.webp" alt="Doctores decorativos"
                 class="absolute right-0 top-1/2 -translate-y-1/2 w-56 h-56 md:w-100 md:h-110 opacity-40 z-10 pointer-events-none select-none" />
             <!-- Contenido principal -->
@@ -117,7 +118,7 @@
                 <!-- Título -->
                 <h1 class="titulo flex flex-col sm:gap-1 md:gap-2 justify-between items-start md:items-center w-full">
                     <span
-                        class="text-[22px] sm:text-[32px] md:text-[40px] lg:text-[52px] font-black text-lightblue leading-none w-full text-left md:text-center">
+                        class="text-[22px] sm:text-[32px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-black text-lightblue leading-none w-full text-left md:text-center">
                         <span class="block md:inline">LLENAMOS</span>
                         <span class="block md:inline">TU AGENDA</span>
                     </span>
@@ -155,7 +156,7 @@
                             </button>
                         </a>
                     </div>
-                    <p class="hidden md:block intel text-[0px] md:text-[14px] text-darkblue font-normal mx-auto">
+                    <p class="parrafoHero hidden md:block intel text-[0px] md:text-[14px] text-darkblue font-normal mx-auto">
                         Especialistas en marketing digital para profesionales de la salud: <br> odontología, estética,
                         fisioterapia y más
                     </p>
@@ -176,7 +177,7 @@
     </section>
 
     <!-- ===== SECCIÓN BENEFICIOS ===== -->
-    <section id="beneficios" class="w-full min-h-screen relative z-10 -mt-[1px]">
+    <section id="beneficios" class="w-full  relative z-10 -mt-[1px]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.34 952.16" class="absolute top-0 left-0 w-full h-full"
             preserveAspectRatio="none">
             <defs>
@@ -197,7 +198,7 @@
             <div class="absolute right-0 top-0 bottom-0 h-full w-1/2 m-0 p-0 overflow-visible">
                 <img class="absolute right-0 top-0 h-full w-auto object-contain md:object-cover m-0 p-0"
                     src="src/webs/crecimiento_freepikimagesection2.webp" alt="Imagen de crecimiento"
-                    style="right: 0; max-width: none;" />
+                    style="right: -17px; max-width: none;" />
             </div>
             <div class="relative w-full min-h-[500px] flex items-center flex-col justify-center">
                 <!-- Texto de fondo, posicionado absolutamente a la izquierda -->
@@ -210,12 +211,12 @@
                     </h2>
                     <img src="src/svg/icon_integration2.svg" alt="icono" class="w-40 h-40 flex-shrink-0" />
                 </div>
-                <div class="absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0">
-                    <h1 class="text-left opacity-5 text-white leading-none font-black">
-                        <span class="block text-[70px]">¿QUÉ</span>
-                        <span class="block font-bold text-[40px]">CONSIGUES</span>
-                        <span class="block text-[70px]">CON</span>
-                        <span class="block font-bold text-[40px]">NOSOTROS?</span>
+                <div class="absolute left-10 top-1/2 -translate-y-1/2 pointer-events-none select-none z-0 letras-section2">
+                    <h1 class="text-left opacity-5 text-white leading-none font-black ">
+                        <span class="block text-[70px] nt1">¿QUÉ</span>
+                        <span class="block font-bold text-[40px]  nt2">CONSIGUES</span>
+                        <span class="block text-[70px]  nt3">CON</span>
+                        <span class="block font-bold text-[40px]  nt4">NOSOTROS?</span>
                     </h1>
                 </div>
                 <!-- Bloque azul centrado en la pantalla -->
@@ -766,7 +767,7 @@
         style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); align-items:center; justify-content:flex-start; transition:background 0.3s;">
         <div id="calendly-modal-content"
             style="background:#fff; border-radius:16px; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.2); margin-left:0; width:600px; max-width:98vw; height:90vh; display:flex; flex-direction:column; transform:translateX(-100%); transition:transform 0.4s cubic-bezier(.4,0,.2,1); overflow:hidden;">
-            <div style="position: absolute; top: 10px; right: 120px; z-index: 51; display: flex; gap: 8px;">
+            <div style="position: absolute; top: 40px; right: 120px; z-index: 51; display: flex; gap: 8px;">
                 <!-- Botón para expandir/encoger -->
                 <button id="toggle-size-modal" title="Expandir/Reducir"
                     style="background: #e5e7eb; border: none; border-radius: 9999px; padding: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
@@ -780,7 +781,7 @@
             </div>
             <button id="cerrar-calendly"
                 class="bg-lightblue cursor-pointer absolute my-10 font-bold text-white rounded-full px-4 py-2"
-                style="top:10px; right:16px; font-size:1.2rem; z-index:50;">
+                style=" right:16px; font-size:1.2rem; z-index:50;">
                 Cerrar
             </button>
             <div style="padding:48px 12px 12px 12px; flex:1; height:100%; overflow:hidden;">

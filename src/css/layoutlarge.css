@@ -1,0 +1,23 @@
+/* Media query para pantallas de 1920px o más */
+@media (min-width: 1920px) {
+   .logoclarodoc{
+        left: 350px;
+   }
+   .parrafoHero{
+        font-size: 15px;
+   }
+
+
+   /* section2 */
+   /* .letras-section2{
+    left: 200px;
+   }
+    .nt1, .nt3{
+        font-size: 95px;
+        
+    }
+    .nt2, .nt4{
+        font-size: 70px;
+    } */
+    /* Puedes agregar aquí más reglas específicas para 1920px */
+}
