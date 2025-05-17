@@ -63,9 +63,9 @@ function selectMenuItem(selectedId) {
         const link = item.querySelector('a');
         if (item.id === selectedId) {
             link.classList.remove('font-normal');
-            link.classList.add('font-bold', 'text-white');
+            link.classList.add('font-bold', 'text-white', 'hover:text-white');
         } else {
-            link.classList.remove('font-bold', 'text-white');
+            link.classList.remove('font-bold', 'text-white', 'hover:text-white');
             link.classList.add('font-normal');
         }
     });

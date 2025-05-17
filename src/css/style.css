@@ -5,9 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-html {
-    scroll-behavior: smooth;
+
+
+html,
+body {
+    height: 100%;
 }
+
 
 main {
     background: linear-gradient(180deg, #ffffff, #eef7ff);
@@ -29,6 +33,10 @@ main {
 
 .intel {
     font-family: "Inter", sans-serif;
+}
+
+.pop {
+    font-family: "Poppins", sans-serif;
 }
 
 .subtitulo__1 {
@@ -68,21 +76,16 @@ main {
     /* Aseguramos que la imagen intente ocupar toda la altura del contenedor */
 }
 
-.nt5 {
-    font-size: 7vw;
+.logoclarodoc {
+    left: 0vw;
+    width: 48vw;
+    height: 48vh;
 }
 
-.nt1,
-.nt3 {
-    font-size: 5.9375em;
-    /* Equivalente a 95px si el base es 16px */
+.mi-gradiente {
+  background: linear-gradient(to bottom, #c7f7ff 0%, #ccf8ff 25%, #dcfaff 55%, #f5feff 88%, #fff 100%);
 }
 
-.nt2,
-.nt4 {
-    font-size: 4.375em;
-    /* Equivalente a 70px si el base es 16px */
-}
 
 
 #navbar {

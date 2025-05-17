@@ -9,9 +9,9 @@ function ajustarTamanoLetras() {
     let tamanoNt1 = 70; // Tamaño base
     let tamanoNt2 = 40; // Tamaño base
 
-    if (anchoVentana > 1920) {
-        tamanoNt1 = 95; // Tamaño para pantallas grandes
-        tamanoNt2 = 70; // Tamaño para pantallas grandes
+    if (anchoVentana >= 1920) {
+        tamanoNt1 = 125; // Tamaño para pantallas grandes
+        tamanoNt2 = 90; // Tamaño para pantallas grandes
     } else if (anchoVentana < 768) {
         tamanoNt1 = 40; // Tamaño para pantallas pequeñas
         tamanoNt2 = 25; // Tamaño para pantallas pequeñas

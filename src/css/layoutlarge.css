@@ -1,33 +1,35 @@
 /* Media query para pantallas de 1920px o más */
 @media (min-width: 1920px) {
     .logoclarodoc {
-        left: 350px;
+        left: -60px;
+        width: 53vw;
+        height: 53vh;
+
     }
+    .lododoctores {
+        width: 30vw;
+        height: 70vh;
+    }	
+/* 
 
     .parrafoHero {
-        font-size: 1rem; /* Ajusta el valor según tu diseño base para pantallas grandes */
-    }
-
+        font-size: 1rem; 
+    } */
 
     /* section2 */
     .letras-section2 {
-        left: 200px;
+        left: 20px;
     }
-
-    
 
     .img1 {
         width: 20%;
-        right: 9vw !important;
     }
 
     #garantia {
         margin-top: -115px !important;
     }
 
-    #bocaboca {
-        top: -60px !important;
-    }
+   
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
