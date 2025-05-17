@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -23,8 +23,6 @@
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/layoutlarge.css">
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
@@ -531,7 +529,7 @@
     </section>
 
     <!-- ===== SECCIÓN FUNCIONAMIENTO ===== -->
-    <section id="funcionamiento" class="w-screen h-screen flex  relative z-20 " style="">
+    <section id="funcionamiento" class="w-screen h-screen flex  relative z-20 ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1929.67 1056"
             class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
             <defs>
@@ -641,8 +639,7 @@
     <!-- ===== SECCIÓN GARANTIA ===== -->
     <section id="garantia" class="w-screen  flex  relative z-10" style="margin-top: -70px;">
         <!-- SVG de fondo, debe quedar detrás de todo el contenido y ocupar todo el ancho y alto -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.19 1024.6" class="absolute inset-0 object-cover z-0"
-            style="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.19 1024.6" class="absolute inset-0 object-cover z-0">
             <defs>
                 <style>
                     .fondo5 {
@@ -699,7 +696,7 @@
         </div>
     </section>
 
-    <!-- Sección 6: Boca a Boca -->
+    <!-- ===== SECCIÓN GARANTIA BOCA A BOCA ===== -->
     <section id="bocaboca" class="relative z-20   bg-gradient-to-b">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.02 789.07"
             class="absolute inset-0 object-cover z-0">
@@ -766,7 +763,11 @@
                  " />
         </div>
     </section>
-    <!-- Modal Calendly -->
+
+
+
+
+    <!-- ===== MODAL CALENDLY ===== -->
     <div id="calendly-modal"
         style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); align-items:center; justify-content:flex-start; transition:background 0.3s;">
         <div id="calendly-modal-content"
@@ -790,15 +791,20 @@
             </button>
             <div style="padding:48px 12px 12px 12px; flex:1; height:100%; overflow:hidden;">
                 <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/jeisonbalduz12"
-                    style="min-width:320px; height:100%;"></div>
+                <!-- Principio del widget integrado de Calendly -->
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/pacienteideal/sesion-estrategica?hide_gdpr_banner=1"
+                    style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
                     async></script>
+                <!-- Final del widget integrado de Calendly -->
                 <!-- Calendly inline widget end -->
             </div>
         </div>
     </div>
-    <!-- Footer -->
+
+
+    <!-- ===== FOOTER ===== -->
     <footer class="relative z-20 bg-darkblue py-6">
         <div class="container mx-auto px-4">
             <!-- Contenedor centrado pero contenido alineado a la izquierda -->
@@ -840,202 +846,14 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/letrasAncho.js"></script>
+    <script src="src/js/modal.js"></script>
+
     <script>
-        // Selecciona el elemento del navbar
-        const navbar = document.getElementById('navbar');
-        const navLinks = document.querySelector('.nav-links')
-
-        // Escucha el evento de scroll
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('bg-white', 'shadow');
-                navbar.classList.remove('bg-transparent');
-            } else {
-                navbar.classList.add('bg-transparent');
-                navbar.classList.remove('bg-white', 'shadow');
-            }
-        });
-
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            if (e.name === 'close') {
-                navLinks.classList.remove('-top-[100vh]')
-                navLinks.classList.add('top-0')
-            } else {
-                navLinks.classList.add('-top-[100vh]')
-                navLinks.classList.remove('top-0')
-            }
-        }
-
-        const text = "30 DÍAS";
-        const typewriterElement = document.getElementById("typewriter");
-        let index = 0;
-
-        function typeEffect() {
-            if (index < text.length) {
-                typewriterElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 300); // Velocidad del efecto
-            }
-        }
-
-        // Inicia el efecto cuando se carga la página
-        window.onload = typeEffect;
-
-        function selectMenuItem(selectedId) {
-            const menuItems = document.querySelectorAll('li[id^="li"]');
-            const slider = document.getElementById('menu-slider');
-            const selectedItem = document.getElementById(selectedId);
-            const menuList = document.querySelector('.subtitulo__1');
-
-            // Obtener el índice del elemento seleccionado
-            const index = Array.from(menuItems).indexOf(selectedItem);
-
-            if (window.innerWidth < 768) {
-                const itemHeight = 40;
-                slider.style.transform = `translateY(${index * itemHeight}px)`;
-            } else {
-                const selectedRect = selectedItem.getBoundingClientRect();
-                const menuRect = menuList.getBoundingClientRect();
-                const newLeft = selectedRect.left - menuRect.left;
-                slider.style.transform = `translateX(${newLeft}px)`;
-                slider.style.width = `${selectedRect.width}px`;
-            }
-
-            menuItems.forEach(item => {
-                const link = item.querySelector('a');
-                if (item.id === selectedId) {
-                    link.classList.remove('font-normal');
-                    link.classList.add('font-bold', 'text-white');
-                } else {
-                    link.classList.remove('font-bold', 'text-white');
-                    link.classList.add('font-normal');
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            selectMenuItem('li1');
-        });
-
-        // --- ACTUALIZACIÓN AUTOMÁTICA DEL MENÚ SEGÚN LA SECCIÓN VISIBLE ---
-        const sectionToMenu = {
-            hero: 'li1',
-            beneficios: 'li2',
-            resultados: 'li4',
-            funcionamiento: 'li3',
-            garantia: 'li5'
-        };
-        const sections = Object.keys(sectionToMenu).map(id => document.getElementById(id));
-        const observer = new IntersectionObserver((entries) => {
-            let maxRatio = 0;
-            let currentSection = null;
-            entries.forEach(entry => {
-                if (entry.isIntersecting && entry.intersectionRatio > maxRatio) {
-                    maxRatio = entry.intersectionRatio;
-                    currentSection = entry.target;
-                }
-            });
-            if (currentSection) {
-                const menuId = sectionToMenu[currentSection.id];
-                if (menuId) selectMenuItem(menuId);
-            }
-        }, {
-            threshold: [0.3, 0.5, 0.7, 1.0]
-        });
-        sections.forEach(section => {
-            if (section) observer.observe(section);
-        });
-
-
-        // MODAL PARA CALENDY
-
-
-        // Abrir modal al hacer click en cualquier botón con la clase .abrir-calendly
-        document.querySelectorAll('.abrir-calendly').forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-                const modal = document.getElementById('calendly-modal');
-                const content = document.getElementById('calendly-modal-content');
-                modal.style.display = 'flex';
-                setTimeout(() => {
-                    content.style.transform = 'translateX(0)';
-                }, 10);
-            });
-        });
-        // Cerrar modal al hacer click en el botón "Cerrar"
-        document.getElementById('cerrar-calendly').onclick = function () {
-            cerrarCalendlyModal();
-        };
-        // Cerrar al hacer click fuera del contenido (solo si se hace click en el fondo oscuro)
-        document.getElementById('calendly-modal').addEventListener('click', function (e) {
-            if (e.target === this) cerrarCalendlyModal();
-        });
-        function cerrarCalendlyModal() {
-            const modal = document.getElementById('calendly-modal');
-            const content = document.getElementById('calendly-modal-content');
-            content.style.transform = 'translateX(-100%)';
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 400);
-        }
-
-        // Botón para expandir/reducir el modal
-        const toggleBtn = document.getElementById('toggle-size-modal');
-        const modalContent = document.getElementById('calendly-modal-content');
-        let expanded = false;
-        toggleBtn.addEventListener('click', function () {
-            expanded = !expanded;
-            if (expanded) {
-                modalContent.style.width = '90vw';
-                modalContent.style.maxWidth = '90vw';
-                // Cambia el icono si quieres (opcional)
-                document.getElementById('icon-expand').innerHTML = `
-                <path stroke="#007BEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    d="M8 16H4v-4M16 16h4v-4M4 8V4h4M20 8V4h-4M8 20l5-5M16 4l-5 5"/>
-            `;
-            } else {
-                modalContent.style.width = '600px';
-                modalContent.style.maxWidth = '98vw';
-                document.getElementById('icon-expand').innerHTML = `
-                <path stroke="#007BEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4M16 4l-5 5M8 20l5-5"/>
-            `;
-            }
-        });
-
-
-        function ajustarTamanoLetras() {
-            const anchoVentana = window.innerWidth;
-            const nt1Elements = document.querySelectorAll('.nt1');
-            const nt2Elements = document.querySelectorAll('.nt2');
-            const nt3Elements = document.querySelectorAll('.nt3');
-            const nt4Elements = document.querySelectorAll('.nt4');
-
-            let tamanoNt1 = 70; // Tamaño base
-            let tamanoNt2 = 40; // Tamaño base
-
-            if (anchoVentana > 1920) {
-                tamanoNt1 = 95; // Tamaño para pantallas grandes
-                tamanoNt2 = 70; // Tamaño para pantallas grandes
-            } else if (anchoVentana < 768) {
-                tamanoNt1 = 40; // Tamaño para pantallas pequeñas
-                tamanoNt2 = 25; // Tamaño para pantallas pequeñas
-            } else {
-                // Puedes definir rangos intermedios y calcular tamaños basados en el ancho
-                tamanoNt1 = 70 + (anchoVentana - 768) * 0.02; // Ejemplo de interpolación lineal
-                tamanoNt2 = 40 + (anchoVentana - 768) * 0.01; // Ejemplo de interpolación lineal
-            }
-
-            nt1Elements.forEach(element => element.style.fontSize = `${tamanoNt1}px`);
-            nt2Elements.forEach(element => element.style.fontSize = `${tamanoNt2}px`);
-            nt3Elements.forEach(element => element.style.fontSize = `${tamanoNt1}px`);
-            nt4Elements.forEach(element => element.style.fontSize = `${tamanoNt2}px`);
-        }
-
-        // Llama a la función al cargar la página y al redimensionar la ventana
-        window.onload = ajustarTamanoLetras;
-        window.addEventListener('resize', ajustarTamanoLetras);
     </script>
 
 </body>

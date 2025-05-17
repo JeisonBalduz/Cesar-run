@@ -58,43 +58,31 @@ main {
 .derechos {
     margin-bottom: 10px;
 }
-.content-img {
-  
-   
-    /* No es necesario definir altura y anchura fijas aquí si quieres que el contenedor se ajuste al contenido */
-    /* Si necesitas un tamaño fijo, mantenlo, pero considera cómo afectará al ajuste de la imagen */
-  
-}
 
 .content-img img {
-    object-fit:fill; /* Cambiamos a "contain" para que la imagen completa sea visible */
-    width: 100%;      /* Aseguramos que la imagen intente ocupar todo el ancho del contenedor */
-    height: 100%;     /* Aseguramos que la imagen intente ocupar toda la altura del contenedor */
+    object-fit: fill;
+    /* Cambiamos a "contain" para que la imagen completa sea visible */
+    width: 100%;
+    /* Aseguramos que la imagen intente ocupar todo el ancho del contenedor */
+    height: 100%;
+    /* Aseguramos que la imagen intente ocupar toda la altura del contenedor */
 }
 
-.conte_flecha{
-   
-}
-
-.conte_flecha div img{
-    
-}
-
-.nt5{
+.nt5 {
     font-size: 7vw;
 }
 
 .nt1,
-    .nt3 {
-        font-size: 5.9375em;
-        /* Equivalente a 95px si el base es 16px */
-    }
+.nt3 {
+    font-size: 5.9375em;
+    /* Equivalente a 95px si el base es 16px */
+}
 
-    .nt2,
-    .nt4 {
-        font-size: 4.375em;
-        /* Equivalente a 70px si el base es 16px */
-    }
+.nt2,
+.nt4 {
+    font-size: 4.375em;
+    /* Equivalente a 70px si el base es 16px */
+}
 
 
 #navbar {
@@ -112,24 +100,6 @@ main {
     /* Fondo azul claro a blanco */
 }
 
-/* seccion 2 */
-
-
-/* seccion 3 */
-
-
-/* seccion 4 */
-
-
-/* seccion 5 */
-
-
-/* seccion 6 */
-
-
-
-/* Estilos base para móviles pequeños (hasta 320px) - Opcional, ya que estos serían tus estilos por defecto */
-/* ... tus estilos base ... */
 
 /* Para móviles estándar (de 321px a 480px) */
 @media (min-width: 340px) {
@@ -144,13 +114,16 @@ main {
 /* Estilos responsivos para la sección bocaboca */
 @media (max-width: 768px) {
     #bocaboca .text-4xl {
-        font-size: 1.75rem; /* Reducción del tamaño de fuente */
+        font-size: 1.75rem;
+        /* Reducción del tamaño de fuente */
         line-height: 2.25rem;
     }
 
     #bocaboca button {
-        font-size: 1rem; /* Reducción del tamaño de fuente de los botones */
-        padding: 0.75rem 1.5rem; /* Ajuste del padding */
+        font-size: 1rem;
+        /* Reducción del tamaño de fuente de los botones */
+        padding: 0.75rem 1.5rem;
+        /* Ajuste del padding */
     }
 
     #bocaboca .circulo1 {
