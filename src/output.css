@@ -866,6 +866,9 @@
   .text-\[22px\] {
     font-size: 22px;
   }
+  .text-\[23px\] {
+    font-size: 23px;
+  }
   .text-\[25px\] {
     font-size: 25px;
   }
@@ -1095,6 +1098,11 @@
       margin-top: 20px;
     }
   }
+  .max-md\:mt-\[30vw\] {
+    @media (width < 48rem) {
+      margin-top: 30vw;
+    }
+  }
   .max-md\:mt-\[40vw\] {
     @media (width < 48rem) {
       margin-top: 40vw;
@@ -1160,9 +1168,49 @@
       height: 41vh;
     }
   }
+  .max-md\:h-\[45vh\] {
+    @media (width < 48rem) {
+      height: 45vh;
+    }
+  }
   .max-md\:h-\[vh\] {
     @media (width < 48rem) {
       height: vh;
+    }
+  }
+  .max-md\:w-30 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 30);
+    }
+  }
+  .max-md\:w-32 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 32);
+    }
+  }
+  .max-md\:w-36 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 36);
+    }
+  }
+  .max-md\:w-40 {
+    @media (width < 48rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .max-md\:w-\[40vw\] {
+    @media (width < 48rem) {
+      width: 40vw;
+    }
+  }
+  .max-md\:w-\[45vw\] {
+    @media (width < 48rem) {
+      width: 45vw;
+    }
+  }
+  .max-md\:w-\[48vw\] {
+    @media (width < 48rem) {
+      width: 48vw;
     }
   }
   .max-md\:w-\[55vw\] {
