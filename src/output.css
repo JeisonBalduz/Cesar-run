@@ -1095,9 +1095,24 @@
       margin-top: 20px;
     }
   }
+  .max-md\:mt-\[40vw\] {
+    @media (width < 48rem) {
+      margin-top: 40vw;
+    }
+  }
+  .max-md\:mt-\[70p\] {
+    @media (width < 48rem) {
+      margin-top: 70p;
+    }
+  }
   .max-md\:mt-\[70px\] {
     @media (width < 48rem) {
       margin-top: 70px;
+    }
+  }
+  .max-md\:mt-\[70vw\] {
+    @media (width < 48rem) {
+      margin-top: 70vw;
     }
   }
   .max-md\:mt-\[80px\] {
@@ -1108,6 +1123,11 @@
   .max-md\:mt-\[90px\] {
     @media (width < 48rem) {
       margin-top: 90px;
+    }
+  }
+  .max-md\:mt-\[vw\] {
+    @media (width < 48rem) {
+      margin-top: vw;
     }
   }
   .max-md\:hidden {
