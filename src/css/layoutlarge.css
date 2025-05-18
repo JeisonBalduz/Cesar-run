@@ -84,42 +84,13 @@
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
-
-@media (max-width: 480px) {
-    #bocaboca .text-4xl {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 0 1rem;
+@media (max-width: 375px) {
+    .letras-ws {
+        font-size: 0.7rem;
     }
-
-    #bocaboca button {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-        width: 90%;
-        max-width: 300px;
-    }
-
-    #bocaboca .circulo1 {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #bocaboca .circulo2 {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #bocaboca img[src*="grid_object"] {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .imagen-manosdoc{
-        width: 100vw;
-        height: 50vh;
-        right: -10% !important;
-        top: -7% !important;
-
+    
+    .comentario1 .burbuja1 {
+        height: 100px;
     }
 }
 
