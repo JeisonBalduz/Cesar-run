@@ -49,8 +49,16 @@ function selectMenuItem(selectedId) {
     const index = Array.from(menuItems).indexOf(selectedItem);
 
     if (window.innerWidth < 768) {
-        const itemHeight = 40;
-        slider.style.transform = `translateY(${index * itemHeight}px)`;
+        // Calcula la posición real del li
+        const selectedRect = selectedItem.getBoundingClientRect();
+        const menuRect = menuList.getBoundingClientRect();
+        const newTop = selectedRect.top - menuRect.top;
+        slider.style.transform = `translateY(${newTop}px)`;
+        slider.style.height = `${selectedRect.height}px`;
+
+        // --- CIERRE AUTOMÁTICO DEL MENÚ EN MÓVIL (DESCOMENTA SI LO QUIERES ACTIVAR) ---
+        // navLinks.classList.add('-top-[100vh]');
+        // navLinks.classList.remove('top-0');
     } else {
         const selectedRect = selectedItem.getBoundingClientRect();
         const menuRect = menuList.getBoundingClientRect();
@@ -108,3 +116,4 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     if (section) observer.observe(section);
 });
+
