@@ -92,6 +92,7 @@ main {
     /* Fondo azul claro a blanco */
 }
 
+
 /* Para móviles estándar (de 321px a 480px) */
 @media (min-width: 340px) {
 
@@ -136,6 +137,7 @@ main {
         height: 1.5rem;
     }
 
+    
 }
 
 @media (max-width: 480px) {

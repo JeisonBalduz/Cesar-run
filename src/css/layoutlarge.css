@@ -6,11 +6,13 @@
         height: 53vh;
 
     }
+
     .lododoctores {
         width: 30vw;
         height: 70vh;
-    }	
-/* 
+    }
+
+    /* 
 
     .parrafoHero {
         font-size: 1rem; 
@@ -25,46 +27,55 @@
         margin-top: -115px !important;
     }
 
-   
+
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
 @media (min-width: 2300px) {
-   .img2{
+    .img2 {
         width: 45vw;
         height: 45vh;
         right: -5vw !important;
         top: -5vw;
     }
-    
+
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
 
 @media (max-width: 634px) {
-   .lista_benificio li:nth-child(1) div {
-    width: 32px;
-    height: 30px;
-}
-.lista_benificio li:nth-child(2) div {
-    width: 38px;
-    height: 33px;
-}
-.lista_benificio li:nth-child(3) div {
-    width: 30px;
-    height: 30px;
-}
-.lista_benificio li:nth-child(4) div {
-    width: 38px;
-    height: 33px;
-}
-.lista_benificio li:nth-child(5) div {
-    width: 38px;
-    height: 33px;
-}
-    
+    .section1{
+        height: 40%;
+    }
+
+
+    .lista_benificio li:nth-child(1) div {
+        width: 32px;
+        height: 30px;
+    }
+
+    .lista_benificio li:nth-child(2) div {
+        width: 38px;
+        height: 33px;
+    }
+
+    .lista_benificio li:nth-child(3) div {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lista_benificio li:nth-child(4) div {
+        width: 38px;
+        height: 33px;
+    }
+
+    .lista_benificio li:nth-child(5) div {
+        width: 38px;
+        height: 33px;
+    }
+
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
