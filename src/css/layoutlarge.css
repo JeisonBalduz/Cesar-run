@@ -1,7 +1,7 @@
 /* Media query para pantallas de 1920px o más */
 @media (min-width: 1920px) {
     .logoclarodoc {
-        left: -60px;
+        left: -6vw;
         width: 53vw;
         height: 53vh;
 
@@ -21,15 +21,23 @@
         left: 20px;
     }
 
-    .img1 {
-        width: 20%;
-    }
-
     #garantia {
         margin-top: -115px !important;
     }
 
    
+
+    /* Puedes agregar aquí más reglas específicas para 1920px */
+}
+
+@media (min-width: 2300px) {
+   .img2{
+        width: 45vw;
+        height: 45vh;
+        right: -5vw !important;
+        top: -5vw;
+    }
+    
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }

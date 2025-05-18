@@ -76,17 +76,11 @@ main {
     /* Aseguramos que la imagen intente ocupar toda la altura del contenedor */
 }
 
-.logoclarodoc {
-    left: 0vw;
-    width: 48vw;
-    height: 48vh;
-}
+
 
 .mi-gradiente {
   background: linear-gradient(to bottom, #c7f7ff 0%, #ccf8ff 25%, #dcfaff 55%, #f5feff 88%, #fff 100%);
 }
-
-
 
 #navbar {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
@@ -103,40 +97,6 @@ main {
     /* Fondo azul claro a blanco */
 }
 
-.redes__content a img:hover::before {
-  transform: scale(1.1);
-  color: red;
-}
-
-.redes__content a img:hover {
-  color: red;
-}
-.logo1 .icon-whatsapp {
-    color: #fff; /* color inicial: blanco */
-    transition: color 0.3s;
-}
-.logo1:hover .icon-whatsapp {
-    color: #25D366; /* verde WhatsApp */
-}
-
-.logo-instagram svg {
-    color: #fff; /* color inicial: blanco */
-    transition: color 0.3s;
-}
-.logo-instagram:hover svg {
-    background: linear-gradient(
-        to right,
-        #833ab4,
-        #fd1d1d,
-        #fcb045
-    );
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    transition: color 0.3s, background 0.3s;
-}
 /* Para móviles estándar (de 321px a 480px) */
 @media (min-width: 340px) {
 
