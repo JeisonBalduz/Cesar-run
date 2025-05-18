@@ -32,3 +32,8 @@ Así de seguros estamos del sistema.
 ¿Listo para dejar de depender del boca a boca y redes sociales sin resultados?
 Te mostramos cómo hacerlo, sin compromiso.
 👉 [Botón grande] Agendar mi auditoría gratuita
+
+funcionamiento y beneficio son los que afectan a nivel movil
+
+funcionamiento va de la mano con las letras de como funciona y los elemntos de abajo
+beneficio la palabra que consigues con nosotros 

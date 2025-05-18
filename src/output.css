@@ -1040,6 +1040,116 @@
       outline-style: none;
     }
   }
+  .max-md\:hidden {
+    @media (width < 48rem) {
+      display: none;
+    }
+  }
+  .max-sm\:top-\[-0vw\] {
+    @media (width < 40rem) {
+      top: -0vw;
+    }
+  }
+  .max-sm\:top-\[-5vw\] {
+    @media (width < 40rem) {
+      top: -5vw;
+    }
+  }
+  .max-sm\:top-\[-15vw\] {
+    @media (width < 40rem) {
+      top: -15vw;
+    }
+  }
+  .max-sm\:top-\[-20vw\] {
+    @media (width < 40rem) {
+      top: -20vw;
+    }
+  }
+  .max-sm\:top-\[0vw\] {
+    @media (width < 40rem) {
+      top: 0vw;
+    }
+  }
+  .max-sm\:top-\[1vw\] {
+    @media (width < 40rem) {
+      top: 1vw;
+    }
+  }
+  .max-sm\:right-\[-20\%\] {
+    @media (width < 40rem) {
+      right: -20%;
+    }
+  }
+  .max-sm\:hidden {
+    @media (width < 40rem) {
+      display: none;
+    }
+  }
+  .max-sm\:h-25 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 25);
+    }
+  }
+  .max-sm\:h-30 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 30);
+    }
+  }
+  .max-sm\:h-50 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 50);
+    }
+  }
+  .max-sm\:h-250 {
+    @media (width < 40rem) {
+      height: calc(var(--spacing) * 250);
+    }
+  }
+  .max-sm\:h-\[80v\] {
+    @media (width < 40rem) {
+      height: 80v;
+    }
+  }
+  .max-sm\:h-\[80vh\] {
+    @media (width < 40rem) {
+      height: 80vh;
+    }
+  }
+  .max-sm\:w-\[50vw\] {
+    @media (width < 40rem) {
+      width: 50vw;
+    }
+  }
+  .max-sm\:w-\[56vw\] {
+    @media (width < 40rem) {
+      width: 56vw;
+    }
+  }
+  .max-sm\:pt-0 {
+    @media (width < 40rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:top-\[1vw\] {
+    @media (width >= 40rem) {
+      top: 1vw;
+    }
+  }
+  .sm\:top-\[5vw\] {
+    @media (width >= 40rem) {
+      top: 5vw;
+    }
+  }
+  .sm\:top-\[10vw\] {
+    @media (width >= 40rem) {
+      top: 10vw;
+    }
+  }
+  .sm\:top-\[12vw\] {
+    @media (width >= 40rem) {
+      top: 12vw;
+    }
+  }
   .sm\:inline {
     @media (width >= 40rem) {
       display: inline;
@@ -1111,6 +1221,11 @@
   .md\:static {
     @media (width >= 48rem) {
       position: static;
+    }
+  }
+  .md\:top-1\/2 {
+    @media (width >= 48rem) {
+      top: calc(1/2 * 100%);
     }
   }
   .md\:top-\[-22vw\] {
@@ -1238,6 +1353,11 @@
       width: auto;
     }
   }
+  .md\:flex-shrink-0 {
+    @media (width >= 48rem) {
+      flex-shrink: 0;
+    }
+  }
   .md\:flex-col {
     @media (width >= 48rem) {
       flex-direction: column;
@@ -1302,6 +1422,11 @@
   .md\:pt-30 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 30);
+    }
+  }
+  .md\:pl-60 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 60);
     }
   }
   .md\:text-center {
