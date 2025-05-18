@@ -24,20 +24,22 @@ function onToggleMenu(e) {
     }
 }
 
-const text = "30 DÍAS";
-const typewriterElement = document.getElementById("typewriter");
-let index = 0;
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "30 DÍAS";
+    const typewriterElement = document.getElementById("typewriter");
+    let index = 0;
 
-function typeEffect() {
-    if (index < text.length) {
-        typewriterElement.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 300); // Velocidad del efecto
+    function typeEffect() {
+        if (index < text.length) {
+            typewriterElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 300); // Velocidad del efecto
+        }
     }
-}
 
-// Inicia el efecto cuando se carga la página
-window.onload = typeEffect;
+    typewriterElement.textContent = ""; // Asegura que esté vacío
+    typeEffect();
+});
 
 function selectMenuItem(selectedId) {
     const menuItems = document.querySelectorAll('li[id^="li"]');

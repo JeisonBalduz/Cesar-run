@@ -33,7 +33,7 @@
     <!-- Menú de navegación -->
     <header id="navbar" class="fixed top-0 left-0 w-full z-50">
         <nav class="w-full mx-auto navegacion ">
-            <div class="contenedor__menu flex  justify-between items-center md:h-[2rem] xl:h-[3rem] bg-white">
+            <div class="contenedor__menu flex  justify-between items-center max-sm:h-[4rem] md:h-[2rem] xl:h-[3rem] bg-white">
                 <div class="flex items-center h-full px-4 max-sm:px-2 max-sm:py-2">
                     <img class="logo w-10 sm:w-12 md:w-14 cursor-pointer logo" src="src/svg/logopacienteideal.svg"
                         alt="..." style="font-family: 'Poppins';">
@@ -77,7 +77,7 @@
                 <div class="flex items-center h-full sm:px-4 max-md:pr-[20px]">
                     <a href="https://wa.me/+584243055075" target="_blank" class="mr-4">
                         <button
-                            class=" sm:text-base max-sm:text-[12px] cursor-pointer flex items-center sm:gap-2 bg-mintgreen text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:-translate-y-1 transition-all duration-300 ">
+                            class=" sm:text-base max-sm:text-[15px] cursor-pointer flex items-center sm:gap-2 bg-mintgreen text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:-translate-y-1 transition-all duration-300 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                 fill="currentColor" class="sm:w-5 sm:h-5">
                                 <path
@@ -87,7 +87,7 @@
                         </button>
                     </a>
                     <ion-icon onclick="onToggleMenu(this)" name="menu"
-                        class="text-lightblue text-2xl sm:text-3xl cursor-pointer md:hidden"></ion-icon>
+                        class="text-lightblue  text-4xl sm:text-3xl cursor-pointer md:hidden"></ion-icon>
                 </div>
             </div>
         </nav>
@@ -142,7 +142,7 @@
                     <span
                         class=" text-[19px] sm:text-[22px] md:text-[28px] lg:text-[40px] 2xl:text-[55px] font-semibold sm:font-extrabold text-darkblue leading-none w-full text-left md:text-center">
                         <span class="pop block md:inline">EN MENOS DE
-                            <span id="typewriter" class="pop font-extrabold text-lightblue">30 DÍAS</span>
+                            <span id="typewriter" class="pop font-extrabold text-lightblue"></span>
                         </span>
                     </span>
                 </h1>
@@ -215,12 +215,12 @@
         </div>
 
         <div class="relative z-10 w-full h-full flex items-center justify-center py-20">
-            <div class="absolute right-0 top-0 bottom-0 h-full w-1/2 m-0 p-0 overflow-visible">
-                <img class="absolute right-0 top-0 h-full w-auto object-contain md:object-cover m-0 p-0 max-sm:hidden"
+            <div class="absolute right-0 top-0 bottom-0 h-full w-1/2 m-0 p-0 overflow-hidden ">
+                <img class="imagen-manosdoc absolute right-0 top-0 h-full w-auto object-contain md:object-cover m-0 p-0 overflow-hidden "
                     src="src/webs/crecimiento_freepikimagesection2.webp" alt="Imagen de crecimiento"
                     style="top: 0.5%;right: -3%;max-width: none;" />
             </div>
-            <div class="relative w-full min-h-[500px] flex items-center flex-col justify-center sm:mt-12">
+            <div class="relative w-full flex items-center flex-col justify-center sm:mt-1">
                 <!-- Texto de fondo, posicionado absolutamente a la izquierda -->
                 <div class="flex  md:flex-row items-center justify-center sm:gap-6 sm:w-full sm:mx-auto">
                     <h2
@@ -242,10 +242,9 @@
                     </h1>
                 </div>
                 <!-- Bloque azul centrado en la pantalla -->
-                <div
-                    class="max-sm:w-[95vw] relative z-10 flex flex-col items-center w-full max-w-2xl xl:max-w-3xl conten_menu mx-auto">
+                <div class="max-sm:w-[95vw] relative z-10 flex flex-col items-center w-full max-w-2xl xl:max-w-3xl conten_menu mx-auto">
                     <ul
-                        class="intel lista_benificio mt-6 bg-blue-500/90 rounded-4xl max-sm:px-3  max-sm:py-3 sm:px-10 sm:py-6 flex flex-col gap-3 w-full shadow-lg intel ">
+                        class="intel lista_benificio mt-6 bg-blue-500/90 rounded-4xl max-sm:px-3  max-sm:py-3 sm:px-10 sm:py-6 flex flex-col gap-1 sm:gap-3 w-full shadow-lg intel ">
                         <li class="flex items-center text-white md:text-lg xl:text-2xl">
                             <div
                                 class="flex items-center justify-center rounded-full bg-mintgreen w-6 h-6 max-sm:w-[30px] max-sm:h-[30px] me-4">
@@ -283,7 +282,7 @@
                                 trabajamos gratis</span>
                         </li>
                     </ul>
-                    <a href="#solicitar-agenda" class="mt-8 w-100 max-w-2xl max-sm:w-[80vw] ">
+                    <a href="#solicitar-agenda" class="mt-8 w-100 max-w-2xl max-sm:w-[80vw] max-sm:hidden"> ">
                         <button
                             class="intel w-full cursor-pointer flex items-center justify-center rounded-lg bg-mintgreen px-4 py-3 text-base md:text-lg xl:text-2xl font-semibold text-white shadow-lg focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                             Solicitar mi auditoría GRATUITA
@@ -295,9 +294,7 @@
     </section>
 
     <!-- ===== SECCIÓN RESULTADOS ===== -->
-    <section id="resultados"
-        class="section3 bg-lightblue w-screen h-screen flex items-center justify-center relative z-30 -mt-[1px] max-sm:h-[80vh]"
-        style="padding-bottom: 90px;">
+    <section id="resultados" class="section3 bg-lightblue w-screen h-screen flex items-center justify-center relative z-30 -mt-[1px] max-sm:h-[80vh]" style="padding-bottom: 90px;">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.34 990"
             class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
             <defs>
@@ -346,13 +343,13 @@
                 </h2>
                 <div class="flex flex-col items-center w-full intel">
                     <!-- Primer testimonio -->
-                    <div class="ml-0 md:ml-[-90px] w-full md:w-1/2 mb-2">
-                        <div class="shadow-lg shadow-black/90 bg-white rounded-4xl  px-6 py-5 md:px-8 md:py-6 relative">
+                    <div class="ml-0 md:ml-[-90px] w-full md:w-1/2 mb-2 max-md:w-[80vw]">
+                        <div class="shadow-lg shadow-black/90 bg-white rounded-full sm:rounded-4xl px-4 py-3 sm:px-6 sm:py-5 md:px-8 md:py-6 relative max-md:h-[12vh]">
 
-                            <p class="intel text-darkblue text-lg md:text-2xl font-bold leading-snug">
+                            <p class="intel text-darkblue text-[14px]  sm:text-lg md:text-2xl font-bold leading-snug">
                                 “Pasamos de tener 3 pacientes al día a tener la agenda llena en menos de un mes"
                             </p>
-                            <div class="mt-3 text-darkblue text-base md:text-lg font-normal flex items-center">
+                            <div class="mt-0 sm:mt-3 text-darkblue text-[14px] sm:text-base md:text-lg font-normal flex items-center">
                                 <span class="intel block">— Dra. Lucía Méndez (Odontóloga)</span>
                             </div>
                         </div>

@@ -1,22 +1,24 @@
+@media (min-width: 2300px) {
+    .img2 {
+        width: 45vw;
+        height: 45vh;
+        right: -5vw !important;
+        top: -5vw;
+    }
+}
+
 /* Media query para pantallas de 1920px o más */
 @media (min-width: 1920px) {
     .logoclarodoc {
         left: -6vw;
         width: 53vw;
         height: 53vh;
-
     }
 
     .lododoctores {
         width: 30vw;
         height: 70vh;
     }
-
-    /* 
-
-    .parrafoHero {
-        font-size: 1rem; 
-    } */
 
     /* section2 */
     .letras-section2 {
@@ -26,24 +28,42 @@
     #garantia {
         margin-top: -115px !important;
     }
-
-
-
-    /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
-@media (min-width: 2300px) {
-    .img2 {
-        width: 45vw;
-        height: 45vh;
-        right: -5vw !important;
-        top: -5vw;
+/* Estilos responsivos para la sección bocaboca */
+@media (max-width: 768px) {
+    #bocaboca .text-4xl {
+        font-size: 1.75rem;
+        /* Reducción del tamaño de fuente */
+        line-height: 2.25rem;
     }
 
+    #bocaboca button {
+        font-size: 1rem;
+        /* Reducción del tamaño de fuente de los botones */
+        padding: 0.75rem 1.5rem;
+        /* Ajuste del padding */
+    }
 
-    /* Puedes agregar aquí más reglas específicas para 1920px */
+    #bocaboca .circulo1 {
+        width: 4rem;
+        height: 4rem;
+        bottom: -10px;
+        left: 5px;
+    }
+
+    #bocaboca .circulo2 {
+        width: 4rem;
+        height: 4rem;
+        top: -35px;
+        right: 15px;
+    }
+
+    #bocaboca img[src*="grid_object"] {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
-
 
 @media (max-width: 634px) {
     .section1 {
@@ -51,7 +71,7 @@
     }
 
 
-     .lista_benificio li div {
+    .lista_benificio li div {
         width: 20px;
         height: 20px;
     }
@@ -62,4 +82,53 @@
     }
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
+}
+
+
+@media (max-width: 480px) {
+    #bocaboca .text-4xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+    }
+
+    #bocaboca button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #bocaboca .circulo1 {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #bocaboca .circulo2 {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #bocaboca img[src*="grid_object"] {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .imagen-manosdoc{
+        width: 100vw;
+        height: 50vh;
+        right: -10% !important;
+        top: -7% !important;
+
+    }
+}
+
+/* Para móviles estándar (de 321px a 480px) */
+@media (min-width: 340px) {
+
+    /* Aquí puedes ajustar fuentes, márgenes, paddings, diseño general para móviles más comunes */
+    .logo {
+        width: 100px;
+    }
+
 }
