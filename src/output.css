@@ -1048,6 +1048,11 @@
       display: none;
     }
   }
+  .max-md\:pr-\[20px\] {
+    @media (width < 48rem) {
+      padding-right: 20px;
+    }
+  }
   .max-sm\:top-\[-20vw\] {
     @media (width < 40rem) {
       top: -20vw;
