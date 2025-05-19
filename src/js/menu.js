@@ -230,76 +230,45 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const sectionIds = ['beneficios', 'resultados', 'funcionamiento', 'garantia'];
-    const sections = sectionIds.map(id => document.getElementById(id));
-    const menuBottom = document.getElementById('menu-bottom');
-    if (!menuBottom) return;
-    const menuLinks = menuBottom.querySelectorAll('a[data-section]');
-    const navLinks = document.querySelector('.nav-links'); // Asegúrate de que este selector es correcto
+// document.addEventListener('DOMContentLoaded', function () {
+//     const sectionIds = ['beneficios', 'resultados', 'funcionamiento', 'garantia'];
+//     const sections = sectionIds.map(id => document.getElementById(id));
+//     const menuBottom = document.getElementById('menu-bottom');
+//     if (!menuBottom) return;
+//     const menuLinks = menuBottom.querySelectorAll('a[data-section]');
 
-    function selectBottomMenu(sectionId) {
-        menuLinks.forEach(link => {
-            if (link.dataset.section === sectionId) {
-                link.classList.add('menu-bottom-a-active');
-            } else {
-                link.classList.remove('menu-bottom-a-active');
-            }
-        });
-    }
+//     function selectBottomMenu(sectionId) {
+//         menuLinks.forEach(link => {
+//             if (link.dataset.section === sectionId) {
+//                 link.classList.add('menu-bottom-a-active');
+//             } else {
+//                 link.classList.remove('menu-bottom-a-active');
+//             }
+//         });
+//     }
 
-    function closeMobileMenu() {
-        // Cierra el menú móvil si está abierto
-        if (window.innerWidth < 768 && navLinks && navLinks.classList.contains('top-0')) {
-            navLinks.classList.remove('top-0');
-            navLinks.classList.add('-top-[100vh]');
-            // Vuelve el color del icono barra-menu a azul
-            const barraMenu = document.getElementById('barra-menu');
-            if (barraMenu) {
-                barraMenu.style.color = "#007BEA";
-                // Si usas un atributo 'name' para el icono (ej: e.name = 'close'/'menu')
-                if (barraMenu.name === 'close') {
-                    barraMenu.name = 'menu';
-                }
-                // Si usas clases para mostrar la X, quítalas aquí:
-                barraMenu.classList.remove('is-active'); // o la clase que uses para la X
-            }
-            // Si tu icono es un botón y quieres simular el click:
-            // barraMenu.click();
-        }
-    }
+//     let lastActive = null;
+//     const observer = new IntersectionObserver((entries) => {
+//         let maxRatio = 0.4;
+//         let activeSection = null;
+//         entries.forEach(entry => {
+//             if (entry.intersectionRatio >= 0.4 && entry.isIntersecting) {
+//                 if (entry.intersectionRatio > maxRatio) {
+//                     maxRatio = entry.intersectionRatio;
+//                     activeSection = entry.target.id;
+//                 }
+//             }
+//         });
+//         if (activeSection && activeSection !== lastActive) {
+//             selectBottomMenu(activeSection);
+//             lastActive = activeSection;
+//         }
+//     }, {
+//         threshold: [0, 0.6, 0.6, 1]
+//     });
 
-    // --- CERRAR MENÚ MÓVIL AL HACER CLICK EN UN ENLACE ---
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            const sectionId = this.dataset.section;
-            selectBottomMenu(sectionId);
-            closeMobileMenu();
-        });
-    });
-
-    // --- ACTUALIZAR MENÚ INFERIOR AL HACER SCROLL ---
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.7
-    };
-
-    const sectionObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const sectionId = entry.target.id;
-                selectBottomMenu(sectionId);
-                // Si la sección es una de las que debe cerrar el menú, ciérralo automáticamente
-                if (['beneficios', 'resultados', 'funcionamiento', 'garantia'].includes(sectionId)) {
-                    closeMobileMenu();
-                }
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        if (section) sectionObserver.observe(section);
-    });
-});
+//     sections.forEach(section => {
+//         if (section) observer.observe(section);
+//     });
+// });
 
