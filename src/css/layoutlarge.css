@@ -30,10 +30,13 @@
     }
 }
 
-@media (min-width: 2560px) {
-    #garantia {
+@media (min-height: 1200px) {
+  #garantia {
          margin-top: -155px !important;
     }
+}
+@media (min-width: 2560px) {
+    
     /* .fecha-verde{
         height: 16vh;
     } */
