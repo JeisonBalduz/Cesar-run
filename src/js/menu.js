@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
             lastActive = activeSection;
         }
     }, {
-        threshold: [0.7, 0.5, 0.6, 1]
+        threshold: [0.7, 1, 1, 1]
     });
 
     sections.forEach(section => {
