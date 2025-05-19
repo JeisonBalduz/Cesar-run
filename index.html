@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/layoutlarge.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://vercel.com/analytics/tracking.js"></script>
+
 </head>
 
 <body class="overflow-x-hidden">
@@ -42,7 +44,7 @@
                 <div
                     class="nav-links md:h-[48px] duration-500 md:static fixed min-h-screen md:min-h-fit left-0 -top-[100vh] md:w-auto w-full flex bg-white md:bg-transparent">
                     <ul
-                        class="subtitulo__1 flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-0 w-full h-full  md:pt-0 relative">
+                        class="subtitulo__1 flex md:flex-row flex-col md:items-center lg:gap-[3vw] gap-0 w-full h-full  md:pt-0 relative">
                         <div id="menu-slider"
                             class="absolute md:h-full h-[63px] bg-lightblue transition-transform duration-300 ease-in-out transform md:rounded-s-md w-full md:w-auto left-0">
                         </div>
@@ -75,7 +77,7 @@
 
                     </ul>
                 </div>
-                <div class="flex items-center h-full sm:px-4 max-md:pr-[20px] md:p-0 lg:p-2">
+                <div class="flex items-center h-full sm:px-4  md:p-0 lg:p-2">
                     <a href="https://wa.me/+584243055075" target="_blank" class="lg:mr-4 ">
                         <button
                             class=" sm:text-base max-sm:text-[15px] cursor-pointer flex items-center sm:gap-2 bg-mintgreen text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow-lg hover:-translate-y-1 transition-all duration-300 ">
@@ -89,7 +91,7 @@
                         </button>
                     </a>
                     <ion-icon id="barra-menu" onclick="onToggleMenu(this)" name="menu"
-                        class="barra-menu text-lightblue  text-4xl sm:text-3xl  cursor-pointer md:hidden"></ion-icon>
+                        class="barra-menu text-lightblue  text-4xl sm:text-3xl  cursor-pointer md:block hidden"></ion-icon>
                 </div>
             </div>
         </nav>
@@ -128,7 +130,8 @@
             <img src="src/webs/landing_stockphotosectionhero.webp" alt="Doctores decorativos"
                 class="lododoctores absolute right-0 top-1/2 -translate-y-1/2 w-60 h-53 max-md:mt-[10vw] max-md:w-[55vw] max-sm:w-[60vw] max-md:h-[48vh] md:w-100 md:h-110 xl:w-[30vw] xl:h-[70vh] z-10 pointer-events-none select-none" />
             <!-- Contenido principal -->
-            <divaa class=" relative z-20  w-full mx-auto flex flex-col items-start md:items-center px-4 md:px-0 max-md:mt-[30vw]">
+            <div
+                class=" relative z-20  w-full mx-auto flex flex-col items-start md:items-center px-4 md:px-0 max-md:mt-[30vw]">
                 <!-- Título -->
                 <h1 class=" flex flex-col sm:gap-1 md:gap-2 justify-between items-start md:items-center w-full">
                     <span
@@ -182,11 +185,12 @@
                     <div class="intel rounded-full bg-mintgreen shadow-lg px-4 py-4 text-center max-w-2xl w-full ">
                         <span class="font-bold text-white text-[15px] md:text-[18px] 2xl:text-2xl leading-none">Agenda
                             hoy una llamada gratuita y descubre</span>
-                        <span class="block text-white text-[13px] md:text-[18px] 2xl:text-2xl font-normal leading-none">cómo
+                        <span
+                            class="block text-white text-[13px] md:text-[18px] 2xl:text-2xl font-normal leading-none">cómo
                             lo vamos a aplicar en tu negocio</span>
                     </div>
                 </div>
-            </divaa>
+            </div>
         </div>
     </section>
 
@@ -219,7 +223,8 @@
             </div>
             <div class="relative w-full flex items-center flex-col justify-center sm:mt-1">
                 <!-- Texto de fondo, posicionado absolutamente a la izquierda -->
-                <div class="flex  md:flex-row items-center justify-center sm:gap-6 sm:w-full sm:mx-auto xl:mt-20  max-sm:mt-[16vw]">
+                <div
+                    class="flex  md:flex-row items-center justify-center sm:gap-6 sm:w-full sm:mx-auto xl:mt-20  max-sm:mt-[16vw]">
                     <h2
                         class="max-md:mr-2 pop max-sm:text-[30px] md:text-5xl xl:text-6xl  font-extrabold text-white leading-tight text-left">
                         <span class="pop block">TE OFRECEMOS</span>
@@ -239,7 +244,8 @@
                     </h1>
                 </div>
                 <!-- Bloque azul centrado en la pantalla -->
-                <div class="max-sm:w-[95vw] relative z-10 flex flex-col items-center w-full max-w-2xl xl:max-w-3xl conten_menu mx-auto">
+                <div
+                    class="max-sm:w-[95vw] relative z-10 flex flex-col items-center w-full max-w-2xl xl:max-w-3xl conten_menu mx-auto">
                     <ul
                         class="intel flex-wrap lista_benificio mt-6 bg-blue-500/90 rounded-4xl max-sm:px-3  max-sm:py-3 sm:px-10 sm:py-6 flex flex-col gap-1 sm:gap-3 w-full shadow-lg intel ">
                         <li class="flex items-center text-white md:text-lg xl:text-2xl">
@@ -291,7 +297,8 @@
     </section>
 
     <!-- ===== SECCIÓN RESULTADOS ===== -->
-    <section id="resultados" class="section3 bg-lightblue w-screen h-screen  flex md:items-center justify-center relative z-30 -mt-[1px] max-sm:pt-[50px] max-sm:h-[500px]">
+    <section id="resultados"
+        class="section3 bg-lightblue w-screen h-screen  flex md:items-center justify-center relative z-30 -mt-[1px] max-sm:pt-[50px] max-sm:h-[500px]">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.34 990"
             class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
             <defs>
@@ -428,9 +435,8 @@
                             class="max-sm:flex max-sm:flex-col intel bg-white max-sm:w-75 w-95 md:w-full rounded-full px-4 py-2 text-sm md:text-2xl xl:text-3xl font-bold text-darkblue">Agendamos
                             una
                             llamada para conocer
-                            <span
-                                class="intel text-darkblue  text-sm md:text-2xl xl:text-3xl font-normal  sm:inline">
-                                 tu clínica</span>
+                            <span class="intel text-darkblue  text-sm md:text-2xl xl:text-3xl font-normal  sm:inline">
+                                tu clínica</span>
                         </span>
 
                     </li>
@@ -442,7 +448,7 @@
                             72
                             horas <b class="contents">implementamos tu sistema</b>
                             <span class="intel text-darkblue text-sm md:text-2xl xl:text-3xl font-bold  sm:inline">
-                                 completo</span>
+                                completo</span>
                         </span>
 
                     </li>
@@ -472,7 +478,8 @@
             </div>
             <div class="flex absolute justify-between h-full w-full z-0" style="align-items: flex-end;">
                 <img src="src/svg/scale_object.svg" alt=""
-                    class="w-20 h-45  md:w-40 md:h-auto object-contain order-1 ml-3 md:ml-10 md:bottom[-25px] max-md:hidden" style="
+                    class="w-20 h-45  md:w-40 md:h-auto object-contain order-1 ml-3 md:ml-10 md:bottom[-25px] max-md:hidden"
+                    style="
                 position: relative;
                 ">
 
@@ -520,7 +527,8 @@
         <div
             class="contenidoprincipal_section5 relative z-20 flex flex-col items-center justify-center max-w-3xl mx-auto pt-30 pb-10 sm:py-16">
             <!-- Imagen central (gráfica) -->
-            <img src="src/svg/stadistic_increaseobject.svg" alt="Gráfica Garantía" class=" w-50 sm:w-60 md:w-80 mb-4 xl:w-100" />
+            <img src="src/svg/stadistic_increaseobject.svg" alt="Gráfica Garantía"
+                class=" w-50 sm:w-60 md:w-80 mb-4 xl:w-100" />
             <!-- Título principal -->
             <h2 class="pop garantia text-2xl sm:text-3xl md:text-5xl font-black text-darkblue text-center px-4 py-2 rounded-md mb-4"
                 style="display:inline-block;">
@@ -670,38 +678,55 @@
             <a href="#hero" class="flex-1 flex flex-col text-lightblue items-center justify-center py-2 group">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono casa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
-                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="32" />
-                        <path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none"
-                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.3 25.69"
+                        class="h-8 w-8 ionicon text-lightblue">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #60a5fa;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="Capa_1-2" data-name="Capa 1">
+                                <path fill="currentColor"
+                                    d="M23.4,20c0,1.66,0,3.31,0,5,0,.61-.14.75-.76.75q-2.91,0-5.82,0H9.46c-1.93,0-3.87,0-5.81,0-.6,0-.74-.13-.75-.72,0-3.33,0-6.67,0-10a1.11,1.11,0,0,1,.3-.71c3.13-3.16,6.29-6.31,9.44-9.46.4-.4.59-.4,1,0q4.72,4.73,9.44,9.46a1.11,1.11,0,0,1,.29.72c0,1.66,0,3.33,0,5Z" />
+                                <path fill="currentColor"
+                                    d="M13.21,2.37,9,6.56l-7.21,7.2a1,1,0,0,1-1.51.1,1,1,0,0,1,.1-1.52L12.34.41A1,1,0,0,1,14,.42q6,6,12,12a1,1,0,1,1-1.42,1.41l-11-10.95A4.41,4.41,0,0,1,13.21,2.37Z" />
+                            </g>
+                        </g>
                     </svg>
                 </div>
-                <span
-                    class="intel text-xs font-bold transition-colors">Principal</span>
+                <span class="intel text-xs font-bold transition-colors">Principal</span>
             </a>
             <!-- Beneficios -->
             <a href="#beneficios" data-section="beneficios"
                 class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono mano con flecha -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon"
-                        viewBox="0 0 512 512">
-                        <path d="M32 32v432a16 16 0 0016 16h432" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                        <rect x="96" y="224" width="80" height="192" rx="20" ry="20" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                        <rect x="240" y="176" width="80" height="240" rx="20" ry="20" fill="none" stroke="currentColor"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-                        <rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" fill="none"
-                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.07 26.61" class="w-8 h-8">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #60a5fa;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="Capa_1-2" data-name="Capa 1">
+                                <path fill="currentColor"
+                                    d="M22.57,26.61l-.65-.14a7.14,7.14,0,0,1-1.61-.76q-4-2.25-8.06-4.48a4.55,4.55,0,0,0-3.79-.34l-1,.32-.13,0V11.81l.83-.12,2.76-.36a9,9,0,0,1,4.85.79c.89.41,1.75.92,2.61,1.39l6.59,3.67a1.43,1.43,0,0,1,.66,1.29,1.53,1.53,0,0,1-.53,1.34.8.8,0,0,1-.88.13l-2.41-1-4.39-1.85a.38.38,0,0,0-.37,0,.6.6,0,0,0-.25.54.57.57,0,0,0,.3.53l1.08.45c1.9.8,3.81,1.59,5.71,2.41a1.79,1.79,0,0,0,2.39-1.33,4.8,4.8,0,0,0,.18-.79c0-.12.05-.17.13-.2L31.06,17l4.32-1.65c.81-.32,1.53.35,1.67,1.32,0,0,0,0,0,.05v.55a.14.14,0,0,0,0,.07,1.77,1.77,0,0,1-.75,1.27l-2.45,1.62-8,5.33a6.2,6.2,0,0,1-1.78.93l-.66.14Z" />
+                                <path fill="currentColor"
+                                    d="M0,9.2H2.63c.33,0,.43.11.43.44q0,7.11,0,14.2a1.48,1.48,0,0,1,0,.21.31.31,0,0,1-.33.33H0Z" />
+                                <path fill="currentColor"
+                                    d="M19.49,0c.22.3.43.61.66.91,1.2,1.59,2.41,3.17,3.62,4.76.05.08.11.15.19.26l-.24,0H21.61c-.34,0-.38,0-.38.38,0,3.91,0,.36,0,4.28V11H18c-.29,0-.29,0-.29-.28V6.37c0-.39,0-.42-.41-.42H15L19.45,0Z" />
+                                <path fill="currentColor"
+                                    d="M4.23,10.36H5.74a.38.38,0,0,1,.4.4V22.68a1.48,1.48,0,0,1,0,.21.35.35,0,0,1-.33.33H4.23Z" />
+                            </g>
+                        </g>
                     </svg>
                 </div>
-                <span
-                    class="intel text-xs font-bold transition-colors">Beneficios</span>
+                <span class="intel text-xs font-bold transition-colors">Beneficios</span>
             </a>
 
             <!-- Resultados -->
@@ -709,8 +734,7 @@
                 class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center  rounded-t-3xl">
                     <!-- Ícono gráfico de barras -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
-                        viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon " viewBox="0 0 512 512">
                         <rect x="64" y="320" width="48" height="160" rx="8" ry="8" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                         <rect x="288" y="224" width="48" height="256" rx="8" ry="8" fill="none" stroke="currentColor"
@@ -721,31 +745,27 @@
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                     </svg>
                 </div>
-                <span
-                    class="intel text-xs font-bold bg-gradient-to-r   px-2 rounded-t-xl">Resultados</span>
+                <span class="intel text-xs font-bold bg-gradient-to-r   px-2 rounded-t-xl">Resultados</span>
             </a>
             <!-- Solución -->
             <a href="#funcionamiento" data-section="funcionamiento"
                 class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono lupa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
-                        viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon " viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
                             stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
                             stroke-width="32" d="M338.29 338.29L448 448" />
                     </svg>
                 </div>
-                <span
-                    class="intel text-xs font-bold transition-colors">Función</span>
+                <span class="intel text-xs font-bold transition-colors">Solución</span>
             </a>
             <a href="#garantia" data-section="garantia"
                 class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono lupa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
-                        viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon " viewBox="0 0 512 512">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="32" d="M336 176L225.2 304 176 255.8" />
                         <path
@@ -755,8 +775,7 @@
                     </svg>
 
                 </div>
-                <span
-                    class="intel text-xs font-bold  transition-colors">Garantía</span>
+                <span class="intel text-xs font-bold  transition-colors">Garantía</span>
             </a>
 
         </nav>

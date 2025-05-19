@@ -31,36 +31,42 @@
 }
 
 @media (max-width: 1024px) {
-    .circuloverde{
+    .circuloverde {
         width: 20rem;
         height: 20rem;
     }
-    .contenidoprincipal_section5{
+
+    .contenidoprincipal_section5 {
         margin-top: 50px;
     }
-    .comentario1, .comentario2{
+
+    .comentario1,
+    .comentario2 {
         width: 50vw;
     }
 
-    .section5{
+    .section5 {
         top: 0vw;
     }
-    .section5 .svg-section5{
+
+    .section5 .svg-section5 {
         height: 100vh;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .section5{
+    .section5 {
         top: -20vw;
     }
-    .section5 .svg-section5{
+
+    .section5 .svg-section5 {
         height: 120vh;
     }
 
-    .letrasws{
+    .letrasws {
         font-size: 13px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -84,23 +90,29 @@
         right: 15px;
     }
 
-    .screen-button-modal{
+    .screen-button-modal {
         display: none !important;
     }
-    .section5{
+
+    .section5 {
         top: -1vw;
     }
-    .comentario1, .comentario2{
+
+    .comentario1,
+    .comentario2 {
         width: 80vw;
     }
-    .letras-funcionamiento{
+
+    .letras-funcionamiento {
         font-size: 2.5rem;
         top: 10px;
     }
-    .garantia{
+
+    .garantia {
         font-size: 2.5rem;
     }
-    .section5{
+
+    .section5 {
         top: 6vw;
     }
 }
@@ -121,17 +133,20 @@
         font-size: 14px
     }
 
-    .circuloverde{
+    .circuloverde {
         width: 10rem;
         height: 10rem;
     }
-    .docdoble{
+
+    .docdoble {
         top: 0vw;
     }
 
-    .section2{
+    .section2 {
         height: 60vh;
     }
+
+
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
@@ -139,24 +154,29 @@
     .letras-ws {
         font-size: 0.7rem;
     }
-    .logoclaro2{
+
+    .logoclaro2 {
         top: 0;
     }
+
     .comentario1 .burbuja1 {
         height: 100px;
     }
-    .docdoble{
+
+    .docdoble {
         top: 4vw;
     }
-    .beneficio_img1{
+
+    .beneficio_img1 {
         top: -0.5% !important;
         right: -8% !important;
     }
 
-    .burbuja2{
+    .burbuja2 {
         height: 120px;
     }
-    .contenidoprincipal_section5{
+
+    .contenidoprincipal_section5 {
         margin-top: 0px;
     }
 
@@ -185,7 +205,7 @@
         height: 20px;
     }
 
-    .section2{
+    .section2 {
         height: 65vh;
     }
 }

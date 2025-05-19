@@ -10,6 +10,10 @@ body {
     height: 100%;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 main {
     background: linear-gradient(180deg, #ffffff, #eef7ff);
     /* Fondo blanco a azul claro */
