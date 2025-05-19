@@ -30,6 +30,15 @@
     }
 }
 
+@media (min-width: 2560px) {
+    #garantia {
+         margin-top: -155px !important;
+    }
+    .fecha-verde{
+        height: 16vh;
+    }
+}
+
 @media (max-width: 1024px) {
     .circuloverde {
         width: 20rem;
