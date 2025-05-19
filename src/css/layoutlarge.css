@@ -43,10 +43,19 @@
     }
 
     .section5{
-        top: -22vw;
+        top: 0vw;
     }
     .section5 .svg-section5{
-        height: 90vh;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .section5{
+        top: -20vw;
+    }
+    .section5 .svg-section5{
+        height: 120vh;
     }
 }
 
@@ -72,10 +81,6 @@
         right: 15px;
     }
 
-    #bocaboca img[src*="grid_object"] {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
     .screen-button-modal{
         display: none !important;
     }
@@ -88,6 +93,9 @@
     .letras-funcionamiento{
         font-size: 2.5rem;
         top: 10px;
+    }
+    .section5{
+        top: 6vw;
     }
 }
 
@@ -124,6 +132,9 @@
     }
     .comentario1 .burbuja1 {
         height: 100px;
+    }
+    .docdoble{
+        top: 4vw;
     }
 }
 
