@@ -1989,6 +1989,11 @@
       display: none;
     }
   }
+  .max-sm\:inline {
+    @media (width < 40rem) {
+      display: inline;
+    }
+  }
   .max-sm\:h-20 {
     @media (width < 40rem) {
       height: calc(var(--spacing) * 20);
@@ -2412,6 +2417,11 @@
     @media (width >= 40rem) {
       --tw-font-weight: var(--font-weight-extrabold);
       font-weight: var(--font-weight-extrabold);
+    }
+  }
+  .md\:fixed {
+    @media (width >= 48rem) {
+      position: fixed;
     }
   }
   .md\:static {
