@@ -85,6 +85,10 @@
     .comentario1, .comentario2{
         width: 80vw;
     }
+    .letras-funcionamiento{
+        font-size: 2.5rem;
+        top: 10px;
+    }
 }
 
 @media (max-width: 634px) {
@@ -101,6 +105,11 @@
 
     .lista_benificio li span {
         font-size: 13px
+    }
+
+    .circuloverde{
+        width: 10rem;
+        height: 10rem;
     }
 
     /* Puedes agregar aquí más reglas específicas para 1920px */

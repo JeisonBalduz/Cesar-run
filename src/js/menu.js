@@ -21,6 +21,25 @@ function onToggleMenu(e) {
     } else {
         navLinks.classList.add('-top-[100vh]')
         navLinks.classList.remove('top-0')
+        // Al cerrar el menú, vuelve el color a azul
+        const barraMenu = document.getElementById('barra-menu');
+        if (barraMenu) {
+            barraMenu.style.color = "#007BEA";
+        }
+    }
+
+    // --- ACTUALIZA EL COLOR DE LA BARRA AL DESPLEGAR EL MENÚ ---
+    if (window.innerWidth < 768) {
+        const barraMenu = document.getElementById('barra-menu');
+        const selectedLi = document.querySelector('li[id^="li"] a.font-bold');
+        if (barraMenu) {
+            if (navLinks.classList.contains('top-0') && selectedLi && selectedLi.parentElement.id === 'li1') {
+                barraMenu.style.color = "#000";
+            } else if (navLinks.classList.contains('top-0')) {
+                barraMenu.style.color = "#007BEA";
+            }
+            // No hace falta else aquí porque ya lo pusimos arriba al cerrar
+        }
     }
 }
 
@@ -46,6 +65,8 @@ function selectMenuItem(selectedId) {
     const slider = document.getElementById('menu-slider');
     const selectedItem = document.getElementById(selectedId);
     const menuList = document.querySelector('.subtitulo__1');
+    const barraMenu = document.getElementById('barra-menu');
+    const navLinks = document.querySelector('.nav-links');
 
     // Obtener el índice del elemento seleccionado
     const index = Array.from(menuItems).indexOf(selectedItem);
@@ -58,15 +79,32 @@ function selectMenuItem(selectedId) {
         slider.style.transform = `translateY(${newTop}px)`;
         slider.style.height = `${selectedRect.height}px`;
 
-        // --- CIERRE AUTOMÁTICO DEL MENÚ EN MÓVIL (DESCOMENTA SI LO QUIERES ACTIVAR) ---
-        // navLinks.classList.add('-top-[100vh]');
-        // navLinks.classList.remove('top-0');
+        // Cambia el color de la barra al seleccionar un li en móvil
+        if (barraMenu) {
+            barraMenu.style.background = ""; // negro
+        }
     } else {
         const selectedRect = selectedItem.getBoundingClientRect();
         const menuRect = menuList.getBoundingClientRect();
         const newLeft = selectedRect.left - menuRect.left;
         slider.style.transform = `translateX(${newLeft}px)`;
         slider.style.width = `${selectedRect.width}px`;
+
+        // Opcional: vuelve la barra a su color original en desktop
+        if (barraMenu) {
+            barraMenu.style.background = ""; // o el color original
+        }
+    }
+
+    // SOLO en móvil y SOLO si el menú está desplegado
+    if (window.innerWidth < 768 && navLinks.classList.contains('top-0')) {
+        if (selectedId === 'li1') {
+            barraMenu.style.color = "#000";
+        } else {
+            barraMenu.style.color = "#007BEA";
+        }
+    } else {
+        barraMenu.style.color = "#007BEA";
     }
 
     menuItems.forEach(item => {
