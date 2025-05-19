@@ -380,7 +380,7 @@
         </div>
     </section>
 
-    <!-- ===== SECCIÓN FUNCIONAMIENTO ===== -->
+    <!-- ===== SECCIÓN FUNCIONAMIENTO ===== max-md:h-[60vh] -->
     <section id="funcionamiento" class="section4 w-screen h-screen flex  relative z-20 ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1929.67 1056"
             class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
@@ -472,8 +472,7 @@
                 </a>
             </div>
             <div class="flex absolute justify-between h-full w-full z-10" style="align-items: flex-end;">
-                <img src="src/svg/scale_object.svg" alt="" class="w-40 h-auto object-contain order-1 ml-10 " style="
-                bottom: -22px;
+                <img src="src/svg/scale_object.svg" alt="" class="w-20 md:w-40 h-auto object-contain order-1 ml-3 md:ml-10 md:bottom[-22px] " style="
                 position: relative;
                 ">
 
@@ -489,7 +488,7 @@
     </section>
 
     <!-- ===== SECCIÓN GARANTIA ===== -->
-    <section id="garantia" class="section5 w-screen  flex  relative z-10 xl:mt-[-110px] md:mt-[-110px] lg:mt-[80px] mt-[-100px]">
+    <section id="garantia" class="section5 w-screen flex relative z-10 xl:mt-[-110px] md:mt-[-110px] lg:mt-[80px] mt-[-100px]">
         <!-- SVG de fondo, debe quedar detrás de todo el contenido y ocupar todo el ancho y alto -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.19 1024.6"
             class="absolute inset-0 object-cover z-0 w-screen h-screen" preserveAspectRatio="none">
@@ -507,21 +506,19 @@
             </g>
         </svg>
         <!-- Imagen decorativa a la derecha -->
-        <div class=" h-full ">
+        <div class="absolute w-screen h-screen flex items-center">
             <img src="src/svg/circle_object.svg" alt="Fondo Derecha"
-                class="absolute left-0 md:top-[155px] md:left-[-41px] top-0 h-full max-h-full w-auto max-md:w-[100px] max-md:h-[100px]  md:w-[440px] md:h-[440px] xl:w-[640px] xl:h-[640px] z-10 object-cover"
-                style="" />
+                class="absolute left-[-40px] top-[124px] md:top-[155px] md:left-[-41px] max-h-full max-md:w-[45vw] max-md:h-[25vh]  md:w-[440px] md:h-[440px] xl:w-[640px] xl:h-[640px] z-10 object-cover"/>
         </div>
 
 
         <!-- Imagen decorativa a la derecha -->
         <img src="src/webs/garantia_dreamstimeimagesection5.webp" alt="Fondo Derecha"
-            class="absolute right-0 top-0 h-full max-h-full w-auto max-w-[60vw] z-10 " style="pointer-events:none;" />
+            class="absolute right-0 top-[32px] md:top-0 h-full max-h-full w-auto xl:max-w-[60vw] z-10 max-md:h-[35vh]" />
         <!-- Contenido principal -->
-        <div class="relative z-20 flex flex-col items-center justify-center max-w-3xl mx-auto py-16"
-            style="min-height: 100vh;">
+        <div class="relative z-20 flex flex-col items-center justify-center max-w-3xl mx-auto pt-30 pb-10 sm:py-16">
             <!-- Imagen central (gráfica) -->
-            <img src="src/svg/stadistic_increaseobject.svg" alt="Gráfica Garantía" class="w-60 md:w-80 mb-4" />
+            <img src="src/svg/stadistic_increaseobject.svg" alt="Gráfica Garantía" class=" w-50 sm:w-60 md:w-80 mb-4" />
             <!-- Título principal -->
             <h2 class="pop text-2xl sm:text-3xl md:text-5xl font-black text-darkblue text-center px-4 py-2 rounded-md mb-4"
                 style="display:inline-block;">
@@ -529,10 +526,10 @@
             </h2>
             <!-- Subtítulo -->
             <div class="bg-white intel rounded-full shadow-lg px-6 py-4 text-center mb-4 flex flex-col">
-                <span class="intel text-[15px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
+                <span class="intel text-[20px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
                     Si no generamos al menos 20 citas calificadas en 30
                 </span>
-                <span class="text-sm text-[15px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
+                <span class="text-sm text-[20px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
                     días, seguimos trabajando <b class="font-bold text-darkblue">sin cobrarte</b> hasta lograrlo
                 </span>
             </div>
