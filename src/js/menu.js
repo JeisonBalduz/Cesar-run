@@ -230,6 +230,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona todos los enlaces del menú superior (ajusta el selector según tu HTML)
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navMenu = document.querySelector('.nav-links');
+    const barraMenu = document.getElementById('barra-menu');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            // Solo cerrar si está en móvil y el menú está abierto
+            if (window.innerWidth < 768 && navMenu.classList.contains('top-0')) {
+                navMenu.classList.remove('top-0');
+                navMenu.classList.add('-top-[100vh]');
+                // Cambia el icono a barra/hamburguesa si aplica
+                if (barraMenu) {
+                    barraMenu.name = 'menu';
+                    barraMenu.style.color = "#007BEA";
+                    barraMenu.classList.remove('is-active'); // si usas una clase para la X
+                }
+            }
+        });
+    });
+});
+
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     const sectionIds = ['beneficios', 'resultados', 'funcionamiento', 'garantia'];
 //     const sections = sectionIds.map(id => document.getElementById(id));
