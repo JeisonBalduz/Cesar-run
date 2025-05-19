@@ -31,7 +31,7 @@
 
 <body class="overflow-x-hidden">
     <!-- Menú de navegación -->
-    <header id="navbar" class="md:fixed top-0 left-0 w-full z-50">
+    <header id="navbar" class="max-sm:absolute sm:fixed top-0 left-0 w-full z-50">
         <nav class="w-full mx-auto navegacion ">
             <div
                 class="contenedor__menu flex  justify-between items-center max-sm:h-[4rem] md:h-[3rem]  xl:h-[3rem] bg-white">
@@ -668,15 +668,15 @@
     </footer>
 
     <!-- Menú inferior fijo tipo app móvil -->
-    <section id="menu-bottom" class="max-sm:block  bottom-0 left-0 w-full z-50 bg-white hidden"
-        style="height: 70px;">
+    <section id="menu-bottom" class="max-sm:block  bottom-0 left-0 w-full z-50 bg-white hidden" style="height: 70px;">
 
         <nav class="flex w-full h-full rounded-t-3xl bg-white">
             <!-- Principal -->
-            <a href="#hero" class="flex-1 flex flex-col items-center justify-center py-2 group">
+            <a href="#hero" class="flex-1 flex flex-col text-lightblue items-center justify-center py-2 group">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono casa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue"
+                        viewBox="0 0 512 512">
                         <path
                             d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
                             fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -686,13 +686,15 @@
                     </svg>
                 </div>
                 <span
-                    class="intel text-xs font-bold text-lightblue group-hover:text-blue-600 transition-colors">Principal</span>
+                    class="intel text-xs font-bold transition-colors">Principal</span>
             </a>
             <!-- Beneficios -->
-            <a href="#beneficios" class="flex-1 flex flex-col items-center justify-center py-2 group">
+            <a href="#beneficios" data-section="beneficios"
+                class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono mano con flecha -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon"
+                        viewBox="0 0 512 512">
                         <path d="M32 32v432a16 16 0 0016 16h432" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                         <rect x="96" y="224" width="80" height="192" rx="20" ry="20" fill="none" stroke="currentColor"
@@ -704,14 +706,16 @@
                     </svg>
                 </div>
                 <span
-                    class="intel text-xs font-bold text-lightblue group-hover:text-blue-600 transition-colors">Beneficios</span>
+                    class="intel text-xs font-bold transition-colors">Beneficios</span>
             </a>
 
             <!-- Resultados -->
-            <a href="#resultados" class="flex-1 flex flex-col items-center justify-center py-2 group">
-                <div class="w-10 h-10 flex items-center justify-center text-lightblue rounded-t-3xl">
+            <a href="#resultados" data-section="resultados"
+                class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
+                <div class="w-10 h-10 flex items-center justify-center  rounded-t-3xl">
                     <!-- Ícono gráfico de barras -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
+                        viewBox="0 0 512 512">
                         <rect x="64" y="320" width="48" height="160" rx="8" ry="8" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                         <rect x="288" y="224" width="48" height="256" rx="8" ry="8" fill="none" stroke="currentColor"
@@ -723,13 +727,15 @@
                     </svg>
                 </div>
                 <span
-                    class="intel text-xs font-bold text-lightblue bg-gradient-to-r   px-2 rounded-t-xl">Resultados</span>
+                    class="intel text-xs font-bold bg-gradient-to-r   px-2 rounded-t-xl">Resultados</span>
             </a>
             <!-- Solución -->
-            <a href="#funcionamiento" class="flex-1 flex flex-col items-center justify-center py-2 group">
+            <a href="#funcionamiento" data-section="funcionamiento"
+                class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono lupa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
+                        viewBox="0 0 512 512">
                         <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
                             stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
@@ -737,12 +743,14 @@
                     </svg>
                 </div>
                 <span
-                    class="intel text-xs font-bold text-lightblue group-hover:text-blue-600 transition-colors">Función</span>
+                    class="intel text-xs font-bold transition-colors">Función</span>
             </a>
-            <a href="#garantia" class="flex-1 flex flex-col items-center justify-center py-2 group">
+            <a href="#garantia" data-section="garantia"
+                class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono lupa -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue" viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon "
+                        viewBox="0 0 512 512">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="32" d="M336 176L225.2 304 176 255.8" />
                         <path
@@ -753,7 +761,7 @@
 
                 </div>
                 <span
-                    class="intel text-xs font-bold text-lightblue group-hover:text-blue-600 transition-colors">Garantía</span>
+                    class="intel text-xs font-bold  transition-colors">Garantía</span>
             </a>
 
         </nav>

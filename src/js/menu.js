@@ -230,3 +230,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const sectionIds = ['beneficios', 'resultados', 'funcionamiento', 'garantia'];
+    const sections = sectionIds.map(id => document.getElementById(id));
+    const menuBottom = document.getElementById('menu-bottom');
+    if (!menuBottom) return;
+    const menuLinks = menuBottom.querySelectorAll('a[data-section]');
+
+    function selectBottomMenu(sectionId) {
+        menuLinks.forEach(link => {
+            if (link.dataset.section === sectionId) {
+                link.classList.add('menu-bottom-a-active');
+            } else {
+                link.classList.remove('menu-bottom-a-active');
+            }
+        });
+    }
+
+    let lastActive = null;
+    const observer = new IntersectionObserver((entries) => {
+        let maxRatio = 0;
+        let activeSection = null;
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > maxRatio && entry.isIntersecting) {
+                maxRatio = entry.intersectionRatio;
+                activeSection = entry.target.id;
+            }
+        });
+        if (activeSection !== lastActive) {
+            selectBottomMenu(activeSection);
+            lastActive = activeSection;
+        }
+    }, {
+        threshold: [0.3, 0.5, 0.7, 1]
+    });
+
+    sections.forEach(section => {
+        if (section) observer.observe(section);
+    });
+});
+

@@ -95,3 +95,10 @@ main {
 #menu-bottom {
     transition: bottom 4s cubic-bezier(.4,0,.2,1);
 }
+
+.menu-bottom-a-active {
+    color: white !important; /* Verde menta */
+    background-color: #007BEA !important;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
