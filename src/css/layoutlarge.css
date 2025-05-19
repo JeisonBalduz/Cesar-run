@@ -30,6 +30,26 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .circuloverde{
+        width: 20rem;
+        height: 20rem;
+    }
+    .contenidoprincipal_section5{
+        margin-top: 50px;
+    }
+    .comentario1, .comentario2{
+        width: 50vw;
+    }
+
+    .section5{
+        top: -22vw;
+    }
+    .section5 .svg-section5{
+        height: 80vh;
+    }
+}
+
 /* Estilos responsivos para la sección bocaboca */
 @media (max-width: 768px) {
     #bocaboca .text-4xl {
@@ -58,6 +78,12 @@
     }
     .screen-button-modal{
         display: none !important;
+    }
+    .section5{
+        top: -1vw;
+    }
+    .comentario1, .comentario2{
+        width: 80vw;
     }
 }
 
