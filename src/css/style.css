@@ -92,4 +92,6 @@ main {
     /* Fondo azul claro a blanco */
 }
 
-
+#menu-bottom {
+    transition: bottom 4s cubic-bezier(.4,0,.2,1);
+}

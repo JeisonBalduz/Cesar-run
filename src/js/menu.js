@@ -157,3 +157,76 @@ sections.forEach(section => {
     if (section) observer.observe(section);
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBottom = document.getElementById('menu-bottom');
+    const heroSection = document.getElementById('hero');
+    const footer = document.querySelector('footer');
+
+    if (!menuBottom || !heroSection || !footer) return;
+
+     function setFixed() {
+        menuBottom.style.position = 'fixed';
+        menuBottom.style.bottom = '0';
+        menuBottom.style.left = '0';
+        menuBottom.style.width = '100%';
+    }
+
+    function setRelative() {
+        menuBottom.style.position = 'relative';
+        menuBottom.style.left = '0';
+        menuBottom.style.width = '100%';
+    }
+
+    // Observer para hero: alterna entre fixed y relative
+    const heroObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (window.innerWidth <= 640) {
+                    if (entry.intersectionRatio > 0.5) {
+                        // Más del 50% de hero visible: menú en flujo normal
+                        setRelative();
+                    } else {
+                        // Menos del 50% de hero visible: menú fijo abajo
+                        setFixed();
+                    }
+                } else {
+                    setFixed();
+                }
+            });
+        },
+        {
+            threshold: [0, 0.5, 1]
+        }
+    );
+    heroObserver.observe(heroSection);
+
+    // Observer para el footer: si el footer es visible, menú relative para que no lo tape
+    const footerObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (window.innerWidth <= 640) {
+                    if (entry.isIntersecting) {
+                        setRelative();
+                    } else {
+                        setFixed(); // <-- Esto hace que el menú vuelva a fixed si el footer ya no es visible
+                    }
+                }
+            });
+        },
+        {
+            threshold: 0.1
+        }
+    );
+    footerObserver.observe(footer);
+
+    // Oculta el menú en desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 640) {
+            setFixed();
+            menuBottom.classList.add('hidden');
+        } else {
+            menuBottom.classList.remove('hidden');
+        }
+    });
+});
+

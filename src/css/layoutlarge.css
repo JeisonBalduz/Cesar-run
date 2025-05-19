@@ -119,7 +119,9 @@
         width: 10rem;
         height: 10rem;
     }
-
+    .docdoble{
+        top: 0vw;
+    }
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
@@ -135,6 +137,13 @@
     }
     .docdoble{
         top: 4vw;
+    }
+    .beneficio_img1{
+        top: -0.5% !important;
+        right: -8% !important;
+    }
+    .contenidoprincipal_section5{
+        margin-top: 0px;
     }
 }
 
