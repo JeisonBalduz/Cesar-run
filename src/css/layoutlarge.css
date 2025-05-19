@@ -34,9 +34,9 @@
     #garantia {
          margin-top: -155px !important;
     }
-    .fecha-verde{
+    /* .fecha-verde{
         height: 16vh;
-    }
+    } */
 }
 
 @media (max-width: 1024px) {
@@ -73,7 +73,7 @@
     }
 
     .letrasws {
-        font-size: 13px;
+        font-size: 12px;
     }
 
 }
@@ -155,13 +155,21 @@
         height: 60vh;
     }
 
+    .imagen-manosdoc{
+        height: 41vh;
+    }
+    .conten_imagen-manosdoc{
+        margin-top: 5px;
+        width: 100vw;
+    }
+
 
     /* Puedes agregar aquí más reglas específicas para 1920px */
 }
 
 @media (max-width: 375px) {
     .letras-ws {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .logoclaro2 {
