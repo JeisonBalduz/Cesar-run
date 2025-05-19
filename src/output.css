@@ -1085,6 +1085,11 @@
       margin-left: calc(var(--spacing) * 12);
     }
   }
+  .max-md\:block {
+    @media (width < 48rem) {
+      display: block;
+    }
+  }
   .max-md\:hidden {
     @media (width < 48rem) {
       display: none;
@@ -2035,6 +2040,13 @@
   .md\:text-\[70px\] {
     @media (width >= 48rem) {
       font-size: 70px;
+    }
+  }
+  .max-md\:md\:block {
+    @media (width < 48rem) {
+      @media (width >= 48rem) {
+        display: block;
+      }
     }
   }
   .lg\:top-\[-10vw\] {
