@@ -2105,6 +2105,11 @@
       height: 60vh;
     }
   }
+  .xl\:h-\[70vh\] {
+    @media (width >= 80rem) {
+      height: 70vh;
+    }
+  }
   .xl\:h-\[640px\] {
     @media (width >= 80rem) {
       height: 640px;
@@ -2113,6 +2118,11 @@
   .xl\:w-75 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 75);
+    }
+  }
+  .xl\:w-100 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .xl\:w-\[20vw\] {
