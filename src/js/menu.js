@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //             lastActive = activeSection;
 //         }
 //     }, {
-//         threshold: [0, 0.6, 0.6, 1]
+//         threshold: [0, 0.4, 0.7, 1]
 //     });
 
 //     sections.forEach(section => {
