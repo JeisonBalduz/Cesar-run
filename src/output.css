@@ -40,6 +40,8 @@
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --text-9xl: 8rem;
     --text-9xl--line-height: 1;
     --font-weight-normal: 400;
@@ -436,6 +438,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
@@ -1124,6 +1129,16 @@
     &:focus {
       --tw-outline-style: none;
       outline-style: none;
+    }
+  }
+  .max-2xl\:w-\[42vw\] {
+    @media (width < 96rem) {
+      width: 42vw;
+    }
+  }
+  .max-2xl\:w-\[90\%\] {
+    @media (width < 96rem) {
+      width: 90%;
     }
   }
   .max-lg\:hidden {
@@ -2338,6 +2353,16 @@
       height: 520px;
     }
   }
+  .\32 xl\:w-\[40vw\] {
+    @media (width >= 96rem) {
+      width: 40vw;
+    }
+  }
+  .\32 xl\:w-\[42vw\] {
+    @media (width >= 96rem) {
+      width: 42vw;
+    }
+  }
   .\32 xl\:w-\[420px\] {
     @media (width >= 96rem) {
       width: 420px;
@@ -2346,6 +2371,21 @@
   .\32 xl\:gap-\[3vw\] {
     @media (width >= 96rem) {
       gap: 3vw;
+    }
+  }
+  .\32 xl\:px-1 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+  }
+  .\32 xl\:px-2 {
+    @media (width >= 96rem) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .\32 xl\:py-1 {
+    @media (width >= 96rem) {
+      padding-block: calc(var(--spacing) * 1);
     }
   }
   .\32 xl\:text-2xl {
@@ -2358,6 +2398,12 @@
     @media (width >= 96rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .\32 xl\:text-8xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
   .\32 xl\:text-9xl {

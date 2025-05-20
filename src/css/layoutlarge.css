@@ -250,10 +250,13 @@
     }
 
     .contenedor_texto {
-        margin-top: 50px;
+        margin-top: 70px;
     }	
     .section3 {
-        height: 450px;
+        height: 500px;
+    }
+    .comentar_garantia{
+        width: 90vw;
     }
 }
 
