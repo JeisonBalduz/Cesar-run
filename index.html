@@ -132,7 +132,7 @@
             <img src="src/svg/logoclaro.svg" alt="Cruz decorativa"
                 class="logoclarodoc  absolute top-1/2 -translate-y-1/2 w-20 h-20 max-md:hidden md:w-[54vw] md:h-[60vh] md:left-[-10vw] xl:left-[] z-10  xl:left[-10vw] pointer-events-none select-none" />
             <img src="src/webs/landing_stockphotosectionhero.webp" alt="Doctores decorativos"
-                class="lododoctores absolute right-0 top-1/2 -translate-y-1/2 w-60 h-53 max-md:mt-[10vw] max-md:w-[55vw] max-sm:w-[60vw] max-md:h-[48vh] md:w-100 md:h-110 xl:w-[30vw] xl:h-[70vh] z-10 pointer-events-none select-none" />
+                class="lododoctores absolute right-0 top-1/2 -translate-y-1/2 w-60 h-53 max-sm:mt-[18vw] max-md:mt-[10vw] max-md:w-[55vw] max-sm:w-[60vw] max-md:h-[48vh] md:w-100 md:h-110 xl:w-[30vw] xl:h-[70vh] z-10 pointer-events-none select-none" />
             <!-- Contenido principal -->
             <div
                 class=" relative z-20  w-full mx-auto flex flex-col items-start md:items-center px-4 md:px-0 max-md:mt-[30vw]">
@@ -229,7 +229,7 @@
                 <!-- Texto de fondo, posicionado absolutamente a la izquierda -->
                 <div
                     class="flex  md:flex-row items-center justify-center sm:gap-6 sm:w-full sm:mx-auto xl:mt-20  max-sm:mt-[16vw]">
-                    <h2
+                    <h2 id="titulo2"
                         class="max-md:mr-2 pop max-sm:text-[30px] md:text-5xl xl:text-6xl  font-extrabold text-white leading-tight text-left">
                         <span class="pop block">TE OFRECEMOS</span>
                         <span class="pop block text-mintgreen">CRECIMIENTO</span>
@@ -289,7 +289,7 @@
                                 trabajamos gratis</span>
                         </li>
                     </ul>
-                    <a href="#solicitar-agenda" class="mt-8 w-100 max-w-2xl max-sm:w-[80vw] max-sm:hidden"> ">
+                    <a href="#solicitar-agenda" class="mt-8 w-100 max-w-2xl max-sm:w-[80vw] max-sm:hidden">
                         <button
                             class="intel w-full cursor-pointer flex items-center justify-center rounded-lg bg-mintgreen px-4 py-3 text-base md:text-lg xl:text-2xl font-semibold text-white shadow-lg focus:outline-none text-center transition-all duration-300 hover:-translate-y-1">
                             Solicitar mi auditoría GRATUITA
@@ -302,9 +302,9 @@
 
     <!-- ===== SECCIÓN RESULTADOS ===== -->
     <section id="resultados"
-        class="section3 bg-lightblue w-screen h-screen  flex md:items-center justify-center relative z-30 -mt-[1px] max-sm:pt-[50px] max-sm:h-[500px]">
+        class="section3 bg-lightblue w-screen h-screen  flex md:items-center justify-center relative z-30 -mt-[1px] scroll-mt-20 max-sm:h-[500px] ">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.34 990"
-            class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
+            class="absolute  left-0 w-full h-full top-[-2px]" preserveAspectRatio="none">
             <defs>
                 <style>
                     .fondo3 {
@@ -339,16 +339,15 @@
 
             <!-- Contenido centrado en toda la pantalla -->
             <div class="resultado absolute   w-full flex flex-col items-center z-20">
-                <h2
-                    class="text-4xl md:text-5xl 2xl:text-7xl font-extrabold text-white leading-tight text-center sm:mb-8">
-                    <span class="pop block text-white">RESULTADOS</span>
-                    <span class="pop block text-mintgreen">REALES</span>
+                <h2 id="titulo3" class="text-4xl md:text-5xl 2xl:text-7xl font-extrabold text-white text-center sm:mb-8 max-sm:mb-4 max-sm:flex max-sm:flex-col max-sm:gap-0">
+                    <span class="pop  text-white">RESULTADOS</span>
+                    <span class="pop  text-mintgreen">REALES</span>
                 </h2>
                 <div class="flex flex-col items-center w-full intel">
                     <!-- Primer testimonio -->
                     <div class="comentario1 ml-0 md:ml-[-90px] w-full md:w-1/2 mb-2 max-md:w-[80vw] max-md:me-12">
                         <div
-                            class="burbuja1 shadow-lg shadow-black/90 bg-white rounded-full sm:rounded-4xl px-5 py-3 sm:px-6 sm:py-5 md:px-8 md:py-6 relative max-sm:h-[90px]">
+                            class="burbuja1 shadow-lg shadow-black/90 bg-white max-sm:rounded-xl rounded-full sm:rounded-4xl px-5 py-3 sm:px-6 sm:py-5 md:px-8 md:py-6 relative max-sm:h-[90px]">
 
                             <p class="intel text-darkblue text-[14px]  sm:text-lg md:text-2xl font-bold leading-snug">
                                 “Pasamos de tener 3 pacientes al día a tener la agenda llena en menos de un mes"
@@ -363,7 +362,7 @@
                     <div class="comentario2 relative mr-0 max-md:ml-12 md:mr-[-10px] w-full md:w-[45%] mt-[-40px] md:mt-[-65px] md:ml-[315px] max-md:w-[80vw]"
                         style="top: 45px;">
                         <div
-                            class="burbuja2 shadow-lg shadow-black/90 bg-white max-sm:rounded-full sm:rounded-4xl py-4 px-5 sm:px-6 sm:py-5 md:px-8 md:py-6 relative max-md:h-[100px]">
+                            class="burbuja2 shadow-lg shadow-black/90 bg-white max-sm:rounded-xl sm:rounded-4xl py-4 px-5 sm:px-6 sm:py-5 md:px-8 md:py-6 relative max-md:h-[100px]">
 
                             <p class="intel text-darkblue text-[14px] sm:text-lg md:text-2xl font-bold leading-snug">
                                 “No tenía tiempo de responder mensajes, y ahora el sistema automatiza todo. Estoy
@@ -390,9 +389,9 @@
     </section>
 
     <!-- ===== SECCIÓN FUNCIONAMIENTO ===== max-md:h-[60vh] -->
-    <section id="funcionamiento" class="section4 w-screen h-screen flex max-md:h-[450px] relative z-20 ">
+    <section id="funcionamiento" class="section4 w-screen h-screen flex max-md:h-[450px] relative z-20 scroll-mt-20">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1929.67 1056"
-            class="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
+            class="absolute  left-0 w-full h-full top-[-1px]" preserveAspectRatio="none">
             <defs>
                 <style>
                     .fondo4 {
@@ -416,7 +415,7 @@
         <div class="flex flex-col items-center justify-center w-full z-20 max-sm:mt-[-30px] md:mt-10 gap-5 md:gap-8">
             <div class="flex flex-row w-full max-md:h-[50px] md:pl-60 mb-5 md:mb-10 lg:pt-0 md:pt-30 max-sm:pt-0">
                 <div class="max-sm:absolute max-md:text-center max-md:w-full flex flex-col  text-left mr-8">
-                    <h2
+                    <h2 id="titulo4"
                         class="letras-funcionamiento text-5xl md:text-7xl 2xl:text-9xl max-md:text-[30px] sm:text-lg font-extrabold   mb-4 nt5 pop">
                         <span class="pop block text-darkblue">¿CÓMO</span>
                         <span class="pop block text-white md:mt-2">FUNCIONA?</span>
@@ -436,10 +435,10 @@
                         <span
                             class="text-white  rounded-full w-10 h-10 flex items-center justify-center text-4xl md:text-6xl xl:text-7xl font-extrabold pop">1</span>
                         <span
-                            class="max-sm:flex max-sm:flex-col intel bg-white max-sm:w-75 w-100 md:w-full rounded-full px-4 py-2 text-sm md:text-2xl xl:text-3xl font-bold text-darkblue">Agendamos
+                            class="max-sm:flex max-sm:flex-col intel bg-white max-sm:w-75 w-100 md:w-full rounded-full px-4 py-2 text-sm md:text-2xl xl:text-3xl font-bold text-blue">Agendamos
                             una
                             llamada para conocer
-                            <span class="intel text-darkblue  text-sm md:text-2xl xl:text-3xl font-normal  sm:inline">
+                            <span class="intel text-blue  text-sm md:text-2xl xl:text-3xl font-normal  sm:inline">
                                 tu clínica</span>
                         </span>
 
@@ -448,10 +447,10 @@
                         <span
                             class="text-white  rounded-full w-10 h-10 flex items-center justify-center text-4xl md:text-6xl xl:text-7xl  font-extrabold pop">2</span>
                         <span
-                            class="max-sm:flex max-sm:flex-col intel bg-white max-sm:w-75 w-95 md:w-full  rounded-full px-4 py-2 text-sm md:text-3xl xl:text-3xlfont-normal text-darkblue">
+                            class="max-sm:flex max-sm:flex-col intel bg-white max-sm:w-75 w-95 md:w-full  rounded-full px-4 py-2 text-sm md:text-3xl xl:text-3xlfont-normal text-blue">
                             En
                             1 semana <b class="contents">implementamos tu sistema completo</b>
-                            <!-- <span class="intel text-darkblue text-sm md:text-2xl xl:text-3xl font-bold  sm:inline">
+                            <!-- <span class="intel text-blue text-sm md:text-2xl xl:text-3xl font-bold  sm:inline">
                                 completo</span> -->
                         </span>
 
@@ -460,7 +459,7 @@
                         <span
                             class="pop text-white  rounded-full w-10 h-10 flex items-center justify-center text-4xl md:text-6xl xl:text-7xl font-extrabold">3</span>
                         <span
-                            class=" max-sm:flex max-sm:flex-col intel bg-white w-95 max-sm:w-75 md:w-full  rounded-full px-4 py-2 text-sm md:text-2xl xl:text-3xl font-bold text-darkblue">
+                            class=" max-sm:flex max-sm:flex-col intel bg-white w-95 max-sm:w-75 md:w-full  rounded-full px-4 py-2 text-sm md:text-2xl xl:text-3xl font-bold text-blue">
                             Empiezas a recibir pacientes y llenar <span> tu agenda</span></span>
                     </li>
                 </ol>
@@ -529,28 +528,26 @@
             class="docdoble absolute right-0 max-sm:top-[50px] md:top-0 h-full max-h-full w-auto xl:max-w-[60vw] z-10 max-md:h-[35vh]" />
         <!-- Contenido principal -->
         <div
-            class="contenidoprincipal_section5 relative z-20 flex flex-col items-center justify-center max-w-3xl mx-auto pt-30 pb-10 sm:py-16">
+            class="contenidoprincipal_section5 relative z-20 flex flex-col items-center justify-center max-w-5xl mx-auto pt-30 pb-10 sm:py-16">
             <!-- Imagen central (gráfica) -->
             <img src="src/svg/stadistic_increaseobject.svg" alt="Gráfica Garantía"
                 class=" w-50 sm:w-60 md:w-80 mb-4 xl:w-100" />
             <!-- Título principal -->
-            <h2 class="pop garantia text-2xl sm:text-3xl md:text-5xl font-black text-darkblue text-center px-4 py-2 rounded-md mb-4"
-                style="display:inline-block;">
-                GARANTÍA DE RESULTADOS
+            <h2 id="titulo5" class="pop garantia text-2xl sm:text-3xl md:text-7xl font-black  text-center px-4 py-2 rounded-md max-md:mb-3 mb-4 max-sm:gap-0 max-sm:flex max-sm:flex-col"
+                style="">
+                <span class=" text-darkblue leading-none m-0 p-0">GARANTÍA DE</span>
+                <span class=" text-lightblue leading-none m-0 p-0">RESULTADOS</span>
             </h2>
             <!-- Subtítulo -->
             <div
-                class="max-sm:inline bg-white intel rounded-full shadow-lg px-6 py-4 text-center mb-4 flex flex-col text-wrap">
-                <span class=" intel text-[14px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
-                    Si no generamos al menos 20 citas calificadas en 30
-                </span>
-                <span class="text-sm text-[14px] sm:text-lg md:text-2xl xl:text-3xl text-darkblue">
-                    días, seguimos trabajando <b class="font-bold text-darkblue">sin cobrarte</b> hasta lograrlo
+                class=" bg-white intel rounded-full shadow-lg px-6 py-4 text-center mb-4 flex flex-col text-wrap max-md:w-[74%] max-md:rounded-lg max-md:py-2 max-md:px-2">
+                <span class=" intel text-[17px] sm:text-lg md:text-2xl xl:text-3xl text-blue leading-none">
+                    Si no generamos al menos 20 citas calificadas en 30 días, seguimos trabajando <b class="font-bold text-blue">sin cobrarte</b> hasta lograrlo
                 </span>
             </div>
             <!-- Frase final -->
             <div
-                class="intel text-lg md:text-2xl font-bold text-darkblue xl:text-3xl text-center flex flex-wrap justify-center items-center gap-2">
+                class="intel text-lg md:text-2xl font-bold text-blue xl:text-3xl text-center flex flex-wrap justify-center items-center gap-2">
                 Así de
                 <span class="intel bg-mintgreen text-white px-2 p rounded-lg text-center font-bold">
                     seguros
@@ -562,7 +559,7 @@
 
     <!-- ===== SECCIÓN GARANTIA BOCA A BOCA ===== style="height: 100%; width: 100%; z-index: 0; min-height: 100%; max-height: 100%;"-->
     <section id="bocaboca"
-        class="section6 w-screen mi-gradiente relative z-20 bg-gradient-to-b lg:top-[-70px] max-md:h-65 max-h-[500px]">
+        class="section6 w-screen mi-gradiente relative z-20 bg-gradient-to-b lg:top-[-70px] max-sm:h-[315px] max-md:h-65 ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.02 789.07"
             class="absolute inset-0 w-full h-full object-cover" style="" preserveAspectRatio="none"
             class="w-screen h-screen"></svg>
@@ -587,19 +584,20 @@
             </g>
         </g>
         </svg>
-        <div class="container mx-auto px-4">
-            <div class="relative flex flex-col items-center justify-center min-h-[400px] md:gap-8">
-                <img src="./src/svg/grid_object.svg" alt="" class="absolute top-10 left-24 w-8 h-8 rotate-45">
+        <div class="container mx-auto px-4  max-md:h-[100%] max-md:flex max-md:items-center max-md:justify-center">
+            <div class="relative flex flex-col items-center justify-center md:gap-8">
+                <img src="./src/svg/grid_object.svg" alt="" class="cuadrado1 absolute top-10 left-24 w-8 h-8 rotate-45">
 
-                <div class="max-sm:text-[20px] md:text-5xl font-black text-center relative leading-none max-md:mb-3">
-                    <span class="pop text-darkblue ">¿LISTO PARA DEJAR DE DEPENDER<br>
-                        DEL BOCA A BOCA Y REDES<br>
-                        SOCIALES
-                    </span>
-                    <span class="pop text-orange"> SIN RESULTADOS?</span>
+                <div
+                    class="max-sm:text-[29px] md:text-5xl font-black text-center relative leading-none max-md:mb-3 flex flex-col items-center lg:w-4xl">
+                    <span class="pop text-darkblue">¿LISTO PARA DEJAR DE DEPENDER DEL BOCA A BOCA Y REDES</span>
+                    <span class="pop text-darkblue max-md:flex max-md:flex-col">SOCIALES <span class="pop text-orange"> SIN RESULTADOS <b class="text-darkblue">?</b> </span></span>
+                    
+                    
                 </div>
 
-                <div class="intel flex justify-center items-center flex-col gap-3 md:gap-4 relative max-md:pb-[90px]" style="">
+                <div class="intel flex justify-center items-center flex-col gap-3 md:gap-4 relative "
+                    style="">
                     <button
                         class="intel max-md:py-[3px] max-md:px-[6px] md:px-6 md:py-3 text-mintgreen border-[2px]  md:border-[3px] border-mintgreen rounded-xl md:rounded-full font-semibold text-center text-[14px] sm:text-lg md:text-2xl">
                         Te mostramos cómo hacerlo, sin compromiso
@@ -612,9 +610,9 @@
                     <div class="flex justify-center items-center w-full absolute left-0 right-0 z-0 conte_flecha "
                         style="top: 0px; pointer-events: none;">
                         <img src="src/svg/path_uncontinuous_objetc.svg" alt=""
-                            class="fecha-verde max-lg:hidden w-[3550px] h-[21vh] object-contain left-[6vw]" style="
+                            class="fecha-verde max-lg:hidden w-[75%] h-[0%] object-contain left-[115px]" style="
                             position: relative;
-                            top: 60px;
+                            top: 90px;
                                 " />
                     </div>
 
@@ -624,7 +622,7 @@
                     class="circulo1 absolute bottom-[-20px] left-16 w-32 h-32  ">
                 <img src="./src/svg/circle_object_1.svg" alt=""
                     class="circulo2 absolute top-[-70px] right-30 w-30 h-30 ">
-                <img src="./src/svg/grid_object.svg" alt="" class="absolute bottom-10 right-28 w-16 h-16 rotate-45">
+                <img src="./src/svg/grid_object.svg" alt="" class="cuadrado2 absolute bottom-10 right-28 w-16 h-16 rotate-45">
             </div>
         </div>
 
@@ -684,7 +682,7 @@
             <a href="#hero" class="flex-1 flex flex-col text-lightblue items-center justify-center py-2 group">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono casa -->
-                     <!-- Ícono casa -->
+                    <!-- Ícono casa -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon text-lightblue"
                         viewBox="0 0 512 512">
                         <path
@@ -702,8 +700,7 @@
                 class="flex-1 flex flex-col items-center justify-center py-2 group text-lightblue">
                 <div class="w-10 h-10 flex items-center justify-center">
                     <!-- Ícono mano con flecha -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon"
-                        viewBox="0 0 512 512">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ionicon" viewBox="0 0 512 512">
                         <path d="M32 32v432a16 16 0 0016 16h432" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
                         <rect x="96" y="224" width="80" height="192" rx="20" ry="20" fill="none" stroke="currentColor"

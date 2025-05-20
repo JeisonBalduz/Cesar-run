@@ -89,10 +89,10 @@
     }
 
     #bocaboca .circulo1 {
-        width: 4rem;
-        height: 4rem;
-        bottom: -10px;
-        left: 5px;
+        width: 6rem;
+        height: 5rem;
+        bottom: -57px;
+        left: -57px;
     }
 
     #bocaboca .circulo2 {
@@ -164,6 +164,22 @@
     .conten_imagen-manosdoc{
         margin-top: 5px;
         width: 100vw;
+    }
+    .comentario2{
+        top: 25px !important;
+    }
+
+    .contenidoprincipal_section5 {
+        margin-top: 10px;
+    }
+
+    .cuadrado1 {
+        top: -38px;
+    }	
+
+    .cuadrado2{
+        right: 10px;
+        bottom: 106px;
     }
 
 
