@@ -115,6 +115,9 @@
         width: 80vw;
     }
 
+    .comentario2 .burbuja2 {
+        padding: 14px;
+    }
     .letras-funcionamiento {
         font-size: 2.5rem;
         top: 10px;
@@ -198,6 +201,7 @@
     .comentario1 .burbuja1 {
         height: 100px;
     }
+
 
     .docdoble {
         top: 4vw;
