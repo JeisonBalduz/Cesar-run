@@ -248,6 +248,13 @@
     .section2 {
         height: 65vh;
     }
+
+    .contenedor_texto {
+        margin-top: 50px;
+    }	
+    .section3 {
+        height: 450px;
+    }
 }
 
 @media (min-width: 340px) {
