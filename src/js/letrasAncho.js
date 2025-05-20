@@ -12,8 +12,8 @@ function ajustarTamanoLetras() {
         tamanoNt1 = 170; // Ultra grande (4K)
         tamanoNt2 = 120;
     } else if (anchoVentana >= 1920) {
-        tamanoNt1 = 140; // Muy grande (FullHD+)
-        tamanoNt2 = 100;
+        tamanoNt1 = 135; // Muy grande (FullHD+)
+        tamanoNt2 = 95;
     } else if (anchoVentana >= 1440) {
         tamanoNt1 = 110; // 1440p
         tamanoNt2 = 75;
